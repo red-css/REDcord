@@ -103,7 +103,7 @@ strong, .breadcrumbs {
 }
 
 #logo a {
-    background: url('https://i.imgur.com/vpSDjgF.png') no-repeat center center;
+    background: url('/img/logo.png') no-repeat center center;
     background-size: contain;
     margin: 0 2.5rem 0 1.0rem;
     height: 100%;
@@ -132,7 +132,7 @@ strong, .breadcrumbs {
     border-radius: 50%;
     content: '';
     float: left;
-    background: url('https://i.imgur.com/wdhd2ag.png') no-repeat center center;
+    background: url('/img/alert.png') no-repeat center center;
     background-size: 1.3rem;
     margin-right: 0.25rem;
 }
@@ -296,26 +296,26 @@ strong, .breadcrumbs {
 }
 
 #userinfo_major #nav_donate a {
-    background-image: url('https://i.imgur.com/NxAL01P.png');
+    background-image: url('/img/donate.png');
 }
 
 #userinfo_major #nav_upload a {
-    background-image: url('https://i.imgur.com/sdk6brO.png');
+    background-image: url('/img/upload.png');
     background-size: 1.15rem;
 }
 
 #userinfo_major #nav_invite a {
-    background-image: url('https://i.imgur.com/IOekL3a.png');
+    background-image: url('/img/invite.png');
     background-size: 1.175rem;
 }
 
 #userinfo_major #nav_help a {
-    background-image: url('https://i.imgur.com/QVmtjQn.png');
+    background-image: url('/img/help.png');
     background-size: 1.4rem;
 }
 
 #userinfo_major #nav_new_logout a {
-    background-image: url('https://i.imgur.com/GSKEnNn.png');
+    background-image: url('/img/logout.png');
     background-size: 1.15rem;
 }
 
@@ -411,7 +411,7 @@ a[href^="user"] {
 }
 
 td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
-    background: url('https://i.imgur.com/AL9hCQp.png') no-repeat center center;
+    background: url('/img/low_quality_poster.png') no-repeat center center;
     display: inline-block;
     box-sizing: border-box;
     padding-left: 150px;
@@ -424,27 +424,27 @@ td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
 
 .starlord {
     padding-left: 1.05rem;
-    background: url('https://i.imgur.com/DAExpvI.png') no-repeat 0.125rem center;
+    background: url('/img/starlord.png') no-repeat 0.125rem center;
     background-size: 0.75rem 0.75rem;
 }
 
 a[href*="musicbrainz.org"] {
     padding-left: 1.05rem;
-    background: url('https://i.imgur.com/GtbEruf.png') no-repeat 0.125rem center;
+    background: url('/img/musicbrainz.png') no-repeat 0.125rem center;
     background-size: 0.75rem 0.75rem;
     color: #ba67af;
 }
 
 a[href*="bandcamp.com"] {
     padding-left: 1.05rem;
-    background: url('https://i.imgur.com/WGwXFwc.png') no-repeat 0.125rem center;
+    background: url('/img/bandcamp.png') no-repeat 0.125rem center;
     background-size: 0.75rem 0.75rem;
     color: #67acb7;
 }
 
 a[href*="discogs.com"] {
     padding-left: 1.05rem;
-    background: url('https://i.imgur.com/1fLqmRN.png') no-repeat 0.125rem center;
+    background: url('/img/discogs.png') no-repeat 0.125rem center;
     background-size: 0.75rem 0.75rem;
     color: #dadac5;
 }
