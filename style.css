@@ -768,28 +768,28 @@ h4.min_padding:after {
     background: #25272b;
     content: '';
     border-radius: 50%;
-    background: url('https://i.imgur.com/5T4d7o9.png') no-repeat center center;
+    background: url('img/unread.png') no-repeat center center;
     background-size: 100% 100%;
 }
 
 .read:before {
-    background-image: url('https://i.imgur.com/U8zJDS0.png');
+    background-image: url('img/read.png');
 }
 
 .read_locked:before {
-    background-image: url('https://i.imgur.com/rJuYOFO.png');
+    background-image: url('img/read_locked.png');
 }
 
 .unread_locked:before {
-    background-image: url('https://i.imgur.com/F7f8Euj.png');
+    background-image: url('img/unread_locked.png');
 }
 
 .unread_sticky:before {
-    background-image: url('https://i.imgur.com/BmGsKfm.png');
+    background-image: url('img/unread_sticky.png');
 }
 
 .read_sticky:before {
-    background-image: url('https://i.imgur.com/VMP5i7d.png');
+    background-image: url('img/read_sticky.png');
 }
 
 .forum_index {
@@ -871,7 +871,7 @@ h4.min_padding:after {
     display: block;
     height: 100%;
     width: 100%;
-    background: url('https://i.imgur.com/ngcZrTA.png') no-repeat center left;
+    background: url('img/last_read.png') no-repeat center left;
     background-size: 0.75rem 0.75rem;
     transition: .1s ease-in-out all;
     opacity: 0.7;
@@ -1026,24 +1026,24 @@ h4.min_padding:after {
 
 #userhistory span:nth-of-type(3) a.brackets {
     /* unsubscribe??? */
-    background-image: url('https://i.imgur.com/gviok2M.png');
+    background-image: url('img/unsubscribe.png');
     font-size: 0;
 }
 
 .post_id {
-    background-image: url('https://i.imgur.com/ElLTsXb.png');
+    background-image: url('img/location.png');
 }
 
 .torrent_description .head a, .go_to_top {
-    background-image: url('https://i.imgur.com/EYoXTNe.png');
+    background-image: url('img/uparrow.png');
 }
 
 .colhead_dark a[href^="report"] {
-    background-image: url('https://i.imgur.com/lsit9aV.png');
+    background-image: url('img/report.png');
 }
 
 .colhead_dark a[id^="quote"] {
-    background-image: url('https://i.imgur.com/j2k2aHH.png');
+    background-image: url('img/quote.png');
 }
 
 .forum_post .colhead_dark div[id^="bar"] a:hover {
@@ -1271,7 +1271,7 @@ ul.poll li.graph {
 
 #torrent_details .torrent_row td:first-of-type {
     padding-left: 2.0rem;
-    background: url('https://i.imgur.com/6UIMV2G.png') no-repeat 0.75rem center;
+    background: url('img/file.png') no-repeat 0.75rem center;
     background-size: 0.7rem 0.7rem;
 }
 
@@ -1484,15 +1484,15 @@ ul.poll li.graph {
 }
 
 .vote_tag_up, .vote_artist_up {
-    background-image: url('https://i.imgur.com/W4TNJOI.png');
+    background-image: url('img/upvote_off.png');
 }
 
 .vote_tag_down, .vote_artist_down {
-    background-image: url('https://i.imgur.com/QevOqMk.png');
+    background-image: url('img/downvote_off.png');
 }
 
 .remove_tag a, .remove_artist a {
-    background-image: url('https://i.imgur.com/2TkexMI.png');
+    background-image: url('img/clear.png');
 }
 
 .notify_box {
@@ -1571,13 +1571,13 @@ ul.poll li.graph {
     height: 1.5rem;
     width: 1.5rem;
     display: block;
-    background: url('https://i.imgur.com/UyCgrIK.png') no-repeat center center;
+    background: url('img/star_off.png') no-repeat center center;
     background-size: 1.25rem 1.25rem;
     opacity: 0.3;
 }
 
 #bookmarks .remove_bookmark, .remove_bookmark a {
-    background-image: url('https://i.imgur.com/YbRMMW1.png');
+    background-image: url('img/star_on.png');
     opacity: 1;
 }
 
@@ -1587,19 +1587,19 @@ ul.poll li.graph {
 
 .small_upvote, .small_upvoted {
     top: 4.30rem;
-    background: url('https://i.imgur.com/W4TNJOI.png') no-repeat center center;
+    background: url('img/upvote_off.png') no-repeat center center;
     background-size: 1.0rem 1.0rem;
     opacity: 0.3;
 }
 
 .small_upvoted {
-    background-image: url('https://i.imgur.com/4aFnHGW.png');
+    background-image: url('img/upvote_on.png');
     opacity: 0.7;
 }
 
 .small_clearvote {
     top: 4.30rem;
-    background: url('https://i.imgur.com/2TkexMI.png') no-repeat center center;
+    background: url('img/clear.png') no-repeat center center;
     background-size: 1.0rem 1.0rem;
     opacity: 1.0;
 }
@@ -1610,13 +1610,13 @@ ul.poll li.graph {
 
 .small_downvote, .small_downvoted {
     top: 5.80rem;
-    background: url('https://i.imgur.com/QevOqMk.png') no-repeat center center;
+    background: url('img/downvote_off.png') no-repeat center center;
     background-size: 1.0rem 1.0rem;
     opacity: 0.5;
 }
 
 .small_downvoted {
-    background-image: url('https://i.imgur.com/RBdMIV8.png');
+    background-image: url('img/downvote_on.png');
     opacity: 0.7;
 }
 
@@ -3634,11 +3634,11 @@ ul.collage_images li:hover span {
 }
 
 .grid_button {
-    background-image: url('https://i.imgur.com/dKgna8P.png');
+    background-image: url('img/grid_view.png');
 }
 
 .list_button {
-    background-image: url('https://i.imgur.com/RFWqdeZ.png');
+    background-image: url('img/list_view.png');
 }
 
 .grid_button:hover, .list_button:hover {
