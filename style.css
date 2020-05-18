@@ -270,7 +270,7 @@ strong, .breadcrumbs {
 #alerts {
     background: #202225;
     order: 2;
-    flex: 1 1 28%;
+    flex: 1 1 20%;
     display: flex;
     align-content: center;
     align-items: center;
@@ -613,8 +613,8 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 }
 
 #searchbars {
-    order: 4;
-    flex: 1 1 auto;
+    order: 5;
+    flex: 1 1 500px;
     background: #292b2f;
     position: sticky;
     top: 5.0rem;
@@ -623,7 +623,7 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 
 #searchbars ul {
     list-style: none;
-    padding: 0 0.5rem;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-around;
@@ -639,11 +639,11 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
     border: 0;
     padding: 0.35rem 0.45rem;
     border-radius: 3px;
-    font: 14px "Segoe UI";
     color: #ccc;
     width: 100%;
     border: 1px solid transparent;
     transition: .1s linear all;
+    
 }
 
 #searchbars input:focus {
@@ -719,7 +719,6 @@ input[type="search"], input[type="text"], input[type="password"], input[type="em
     padding: 0.35rem 0.4rem;
     max-width: 100%;
     color: #bebebe;
-    font-family: "Segoe UI";
 }
 
 input:disabled {
@@ -811,7 +810,7 @@ input[type="radio"]:checked:after {
     flex: 1 1 auto;
     width: 80%;
     margin: 0 auto;
-    padding: 2.5rem 2.0rem;
+    padding: 2.5rem 1.5rem;
 }
 
 #footer {
@@ -1999,7 +1998,7 @@ ul.poll li.graph {
 /************** Home ****************************/
 
 .news_post img {
-    max-width: unset;
+    max-width: 100%;
 }
 
 .news_post .head {
