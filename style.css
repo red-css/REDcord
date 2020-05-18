@@ -3913,13 +3913,16 @@ ul.collage_images li:hover span {
     border: 1px solid #222;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
     color: #909090;
+    white-space: nowrap;
 }
 
 .tooltipster-default .tooltipster-content {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
     line-height: 1.5em;
-    padding: 0.25rem 0.5rem 0.5rem;
     font-size: 0.8rem;
+    padding: 0;
+    margin: 0 auto;
+    padding: 0.25rem 0.5rem;
 }
 
 .chart-text {
