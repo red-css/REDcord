@@ -2026,7 +2026,7 @@ span[style="color: red;"], .important_text, .warning {
     color: #ec5754 !important;
 }
 
-span[style="color: green;"], .important_text, .warning {
+span[style="color: green;"] {
     color: #2eca6b !important;
 }
 
