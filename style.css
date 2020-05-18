@@ -7,14 +7,161 @@
    - yellow : f1bd1d
    - orange : e67e22
    - orangered : e74c3b
-
 */
 
-* {
-    box-sizing: border-box;
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
-.hidden {
+body {
+    background: #2f3136;
+    color: #b4b6b9;
+    margin: 0;
+    font-size: 13.5px;
+    font-family: "Segoe UI", Helvetica, Sans-Serif;
+    line-height: 1.2rem;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    -moz-font-variant-ligatures: normal;
+    font-variant-ligatures: normal;
+    -webkit-font-variant-ligatures: normal;
+    text-rendering: optimizeLegibility!important;
+    -moz-osx-font-smoothing: greyscale!important;
+    -webkit-font-smoothing: antialiased!important
+}
+
+hr {
+    box-sizing: content-box;
+    overflow: visible;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+pre, code, kbd, samp {
+    font-family: Consolas, monospace;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+img {
+    border-style: none
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.2;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+p:first-child {
+    margin-top: 0
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.hidden, [hidden] {
     display: none !important;
 }
 
@@ -28,16 +175,6 @@ ul.nobullet {
     display: none;
 }
 
-body {
-    background: #2f3136;
-    color: #b4b6b9;
-    padding: 0;
-    margin: 0;
-    font-size: 13.5px;
-    font-family: "Segoe UI", Helvetica, Sans-Serif;
-    line-height: 1.2rem;
-}
-
 .nobr, .number_column {
     white-space: nowrap;
 }
@@ -49,6 +186,7 @@ body {
 a {
     text-decoration: none;
     color: #78c4de;
+    border: none;
     transition: .1s linear all;
 }
 
@@ -58,6 +196,8 @@ a {
 
 a:hover, .forum_post a:hover, .news_post .pad a:hover {
     color: #4fd2ff;
+    border: none;
+    text-decoration: none;
 }
 
 strong, .breadcrumbs {
@@ -512,22 +652,52 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 }
 
 input[type="submit"], input[type="button"], button {
+    -webkit-appearance: button;
     background: #36393f;
     color: #43b581;
     font-weight: 600;
     font-family: "Segoe UI";
     margin: 0.25rem;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 3px;
     padding: 0.35rem 0.5rem;
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .15);
     cursor: pointer;
+    line-height: 1;
+    box-sizing: unset;
+    overflow: visible;
+    font-size: inherit;
+    font-family: inherit;
 }
+
+/* Stolen from PTP Blue Night -- get in touch later */
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     box-shadow: 0 0 3px 2px rgba(0, 0, 0, .4);
     background: #3d4046;
     color: #72e1ae;
+    cursor: pointer;
+    animation: jelly-effect .4s
+}
+
+@keyframes jelly-effect {
+    0%, 100% {
+        transform: scale(1, 1)
+    }
+    25% {
+        transform: scale(.93, 1.07)
+    }
+    50% {
+        transform: scale(1.07, .93)
+    }
+    75% {
+        transform: scale(.98, 1.02)
+    }
+}
+
+input[type="submit"]:focus, input[type="button"]:focus, button:focus {
+    color: #72e1ae;
+    border-color: #5f7196;
 }
 
 textarea {
@@ -744,7 +914,6 @@ code {
     font-size: 90%;
     border-radius: 2px;
 }
-
 /*************** Upload ***************/
 #upload #content > .box {
     width: 100% !important;
@@ -760,7 +929,7 @@ code {
 
 #upload #content .thin > p input {
     margin-top: 1.0rem;
-    
+
 }
 #upload .label {
     white-space: nowrap;
@@ -800,6 +969,7 @@ code {
 #showdnu {
     font-weight: 700;
 }
+
 /*************** Forums ***************/
 
 h4.min_padding {
@@ -1470,14 +1640,14 @@ ul.poll li.graph {
     vertical-align: middle;
 }
 
-#userhistory .group, #userhistory .torrent, #artist .group, #artist .torrent, #torrents .group, #torrents .torrent, #top10 .group:not(.gt10_torrent), #top10 .torrent:not(.gt10_torrent) {
+#user .torrent, #userhistory .group, #userhistory .torrent, #artist .group, #artist .torrent, #torrents .group, #torrents .torrent, #top10 .group:not(.gt10_torrent), #top10 .torrent:not(.gt10_torrent) {
     border-top: 1px solid #3f4145;
     display: block !important;
     padding-top: 1.0rem;
     clear: both !important;
 }
 
-#userhistory .group:before, #userhistory .torrent:before, #artist .group:before, #artist .torrent:before, #torrents .group:before, #torrents .torrent:before, #top10 .group:not(.gt10_torrent):before, #top10 .torrent:not(.gt10_torrent):before {
+#user .torrent:before, #user .group:before, #userhistory .group:before, #userhistory .torrent:before, #artist .group:before, #artist .torrent:before, #torrents .group:before, #torrents .torrent:before, #top10 .group:not(.gt10_torrent):before, #top10 .torrent:not(.gt10_torrent):before {
     float: left;
     width: 0;
     height: 9.5rem;
@@ -1506,6 +1676,20 @@ ul.poll li.graph {
     font-size: 1.0rem;
     font-weight: 400;
     line-height: 1.3rem;
+}
+
+#user .big_info, #user .group_info {
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+#user table tr td.big_info {
+    display: block;
+    padding-left: 0.5rem !important;
+}
+
+#user table .big_info div {
+    line-height: 1.5rem;
 }
 
 .group_image {
@@ -2217,14 +2401,14 @@ a[href="#requests"] {
     width: 100%;
 }
 
-#userhistory .torrent_table tr, #artist .torrent_table tr, #torrents .torrent_table tr, #top10 .torrent_table tr {
+#user .torrent_table tr, #userhistory .torrent_table tr, #artist .torrent_table tr, #torrents .torrent_table tr, #top10 .torrent_table tr {
     position: relative;
     padding-left: 11.5rem;
     width: 100%;
     display: table-row-group;
 }
 
-#torrents .torrent_table:not(.details) .group_torrent td:nth-of-type(1), #userhistory .group_torrent td:nth-of-type(1) {
+#user .torrent_table td:nth-of-type(1), #torrents .torrent_table:not(.details) .group_torrent td:nth-of-type(1), #userhistory .group_torrent td:nth-of-type(1) {
     padding-left: 12.0rem;
 }
 
@@ -3486,7 +3670,8 @@ ul.collage_images li:hover span {
 }
 
 .lightbox img {
-    max-height: 100%
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /****************** Subscriptions *****************/
@@ -4379,4 +4564,183 @@ ul.collage_images li:hover span {
 
 .graphs .bar-color-24:hover {
     fill: #268e2a
+}
+
+/*** NOTE: Stole this code from PTP theme Blue Night; need to get permission, filter emoticons, etc.  ***/
+
+img[src="https://static.redacted.ch/static/common/smileys/angry.gif"], img[src="https://static.redacted.ch/static/common/smileys/biggrin.gif"], img[src="https://static.redacted.ch/static/common/smileys/blank.gif"], img[src="https://static.redacted.ch/static/common/smileys/blush.gif"], img[src="https://static.redacted.ch/static/common/smileys/cool.gif"], img[src="https://static.redacted.ch/static/common/smileys/creepy.gif"], img[src="https://static.redacted.ch/static/common/smileys/crom.gif"], img[src="https://static.redacted.ch/static/common/smileys/crying.gif"], img[src="https://static.redacted.ch/static/common/smileys/eyesright.gif"], img[src="https://static.redacted.ch/static/common/smileys/frown.gif"], img[src="https://static.redacted.ch/static/common/smileys/heart.gif"], img[src="https://static.redacted.ch/static/common/smileys/hmm.gif"], img[src="https://static.redacted.ch/static/common/smileys/laughing.gif"], img[src="https://static.redacted.ch/static/common/smileys/ninja.gif"], img[src="https://static.redacted.ch/static/common/smileys/no.gif"], img[src="https://static.redacted.ch/static/common/smileys/nod.gif"], img[src="https://static.redacted.ch/static/common/smileys/ohnoes.gif"], img[src="https://static.redacted.ch/static/common/smileys/ohshit.gif"], img[src="https://static.redacted.ch/static/common/smileys/omg.gif"], img[src="https://static.redacted.ch/static/common/smileys/paddle.gif"], img[src="https://static.redacted.ch/static/common/smileys/sad.gif"], img[src="https://static.redacted.ch/static/common/smileys/shifty.gif"], img[src="https://static.redacted.ch/static/common/smileys/sick.gif"], img[src="https://static.redacted.ch/static/common/smileys/smile.gif"], img[src="https://static.redacted.ch/static/common/smileys/sorry.gif"], img[src="https://static.redacted.ch/static/common/smileys/thanks.gif"], img[src="https://static.redacted.ch/static/common/smileys/tongue.gif"], img[src="https://static.redacted.ch/static/common/smileys/wave.gif"], img[src="https://static.redacted.ch/static/common/smileys/wink.gif"], img[src="https://static.redacted.ch/static/common/smileys/worried.gif"], img[src="https://static.redacted.ch/static/common/smileys/wtf.gif"], img[src="https://static.redacted.ch/static/common/smileys/wub.gif"], img[src="static/common/smileys/angry.gif"], img[src="static/common/smileys/biggrin.gif"], img[src="static/common/smileys/blank.gif"], img[src="static/common/smileys/blush.gif"], img[src="static/common/smileys/cool.gif"], img[src="static/common/smileys/creepy.gif"], img[src="static/common/smileys/crom.gif"], img[src="static/common/smileys/crying.gif"], img[src="static/common/smileys/eyesright.gif"], img[src="static/common/smileys/frown.gif"], img[src="static/common/smileys/heart.gif"], img[src="static/common/smileys/hmm.gif"], img[src="static/common/smileys/laughing.gif"], img[src="static/common/smileys/ninja.gif"], img[src="static/common/smileys/no.gif"], img[src="static/common/smileys/nod.gif"], img[src="static/common/smileys/ohnoes.gif"], img[src="static/common/smileys/ohshit.gif"], img[src="static/common/smileys/omg.gif"], img[src="static/common/smileys/paddle.gif"], img[src="static/common/smileys/sad.gif"], img[src="static/common/smileys/shifty.gif"], img[src="static/common/smileys/sick.gif"], img[src="static/common/smileys/smile.gif"], img[src="static/common/smileys/sorry.gif"], img[src="static/common/smileys/thanks.gif"], img[src="static/common/smileys/tongue.gif"], img[src="static/common/smileys/wave.gif"], img[src="static/common/smileys/wink.gif"], img[src="static/common/smileys/worried.gif"], img[src="static/common/smileys/wtf.gif"], img[src="static/common/smileys/wub.gif"] {
+    width: 16px!important;
+    height: 16px!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    padding-left: 20px!important;
+    -webkit-background-size: contain!important;
+    -o-background-size: contain!important;
+    background-size: contain!important
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/smile.gif"], img[src="static/common/smileys/smile.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/sad.gif"], img[src="static/common/smileys/sad.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/biggrin.gif"], img[src="static/common/smileys/biggrin.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/ohshit.gif"], img[src="static/common/smileys/ohshit.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/tongue.gif"], img[src="static/common/smileys/tongue.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/blank.gif"], img[src="static/common/smileys/blank.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/angry.gif"], img[src="static/common/smileys/angry.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/blush.gif"], img[src="static/common/smileys/blush.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/cool.gif"], img[src="static/common/smileys/cool.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/creepy.gif"], img[src="static/common/smileys/creepy.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/crying.gif"], img[src="static/common/smileys/crying.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/eyesright.gif"], img[src="static/common/smileys/eyesright.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/frown.gif"], img[src="static/common/smileys/frown.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/hmm.gif"], img[src="static/common/smileys/hmm.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/laughing.gif"], img[src="static/common/smileys/laughing.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/ninja.gif"], img[src="static/common/smileys/ninja.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/no.gif"], img[src="static/common/smileys/no.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/nod.gif"], img[src="static/common/smileys/nod.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/ohnoes.gif"], img[src="static/common/smileys/ohnoes.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/omg.gif"], img[src="static/common/smileys/omg.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/shifty.gif"], img[src="static/common/smileys/shifty.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/sick.gif"], img[src="static/common/smileys/sick.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/wink.gif"], img[src="static/common/smileys/wink.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/worried.gif"], img[src="static/common/smileys/worried.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/wtf.gif"], img[src="static/common/smileys/wtf.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/wub.gif"], img[src="static/common/smileys/wub.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/paddle.gif"], img[src="static/common/smileys/paddle.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/wave.gif"], img[src="static/common/smileys/wave.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/heart.gif"], img[src="static/common/smileys/heart.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/thanks.gif"], img[src="static/common/smileys/thanks.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg) no-repeat center center
+}
+
+img[src="static/common/smileys/thanks.gif"] {
+    width: 48px!important;
+    height: 48px!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    padding-left: 48px!important
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/crom.gif"], img[src="static/common/smileys/crom.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg) no-repeat center center
+}
+
+img[src="https://static.redacted.ch/static/common/smileys/sorry.gif"], img[src="static/common/smileys/sorry.gif"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg) no-repeat center center
+}
+
+img[src="static/common/symbols/donor.png"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg) no-repeat center center
+}
+
+img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="static/common/symbols/disabled.png"] {
+    background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg) no-repeat center center
+}
+
+img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="static/common/symbols/disabled.png"], img[src="static/common/symbols/donor.png"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    padding-left: 12px;
+    min-height: 12px;
+    min-width: 12px;
+    margin-left: 0.3rem;
+    vertical-align: baseline;
+}
+
+.user_badge_icon {
+    vertical-align: bottom;
 }
