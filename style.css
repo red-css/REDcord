@@ -1552,6 +1552,7 @@ ul.poll li.graph {
     direction: rtl;
     color: #747679;
     transition: .1s linear margin;
+    white-space: nowrap;
 }
 
 .box_request_desc ol li:hover::before, .torrent_description ol li:hover::before {
