@@ -216,14 +216,14 @@ strong, .breadcrumbs {
     justify-content: flex-end;
     margin: 0;
     padding: 0;
-    flex: 1 1 60%;
+    flex: 1 1 auto;
 }
 
 #menu ul {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 0.25rem;
     align-items: center;
 }
 
@@ -246,8 +246,14 @@ strong, .breadcrumbs {
     color: #fff;
 }
 
-#logo {
+.clear_flex {
     order: 4;
+    flex:  1 1 100%;
+    height: 0;
+}
+
+#logo {
+    order: 5;
     width: 225px;
     flex: 0 0 225px;
     position: sticky;
@@ -270,11 +276,12 @@ strong, .breadcrumbs {
 #alerts {
     background: #202225;
     order: 2;
-    flex: 1 1 20%;
+    flex: 0 0 auto;
     display: flex;
     align-content: center;
     align-items: center;
     padding-left: 5px;
+    overflow: hidden;
 }
 
 .alertbar a:before {
@@ -613,8 +620,8 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 }
 
 #searchbars {
-    order: 5;
-    flex: 1 1 500px;
+    order: 6;
+    flex: 1 1 1%;
     background: #292b2f;
     position: sticky;
     top: 5.0rem;
@@ -631,7 +638,7 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 
 #searchbars ul li {
     flex: 1 1 auto;
-    padding: 1.0rem 0.75rem;
+    padding: 1.0rem 0.5rem;
 }
 
 #searchbars input {
@@ -2901,6 +2908,7 @@ a[href="#requests"] {
 #taglist,
 /* in search*/
 
+#nav_index,
 #similar_artist_map, #torrents a[name="comments"], #artist a[name="comments"], #collage .box_category, #nav_logout, #nav_useredit, .sticky_post_label, #stats_required, .noty_button_close {
     display: none !important;
 }
