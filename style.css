@@ -804,6 +804,8 @@ input[type="radio"]:checked:after {
 }
 
 #header {
+    order: 1;
+    background: #202225;
     top: -3.0rem;
     width: 100%;
     position: sticky;
@@ -815,7 +817,6 @@ input[type="radio"]:checked:after {
 
 #content {
     flex: 1 1 auto;
-    width: 80%;
     margin: 0 auto;
     padding: 2.5rem 1.5rem;
 }
@@ -1036,8 +1037,7 @@ h4.min_padding:after {
 }
 
 .forum_index {
-    padding: 0rem 1rem 1.0rem 0.5rem;
-    margin: 1.0rem -0.5rem;
+    margin: 1.0rem 0;
     color: #73787e;
 }
 
@@ -2663,6 +2663,7 @@ a[href="#requests"] {
 }
 
 #sss {
+    order: 2;
     background: #202225;
     flex 0 0 225px;
     width: 100%;
@@ -3583,6 +3584,11 @@ ul.collage_images li:hover span {
 .message_table tr {
     transition: .1s linear background-color;
     white-space: nowrap;
+    vertical-align: top;
+}
+
+.message_table td:nth-of-type(2) {
+    white-space: normal;
 }
 
 .message_table tr:hover {
@@ -4754,4 +4760,207 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
 
 .user_badge_icon {
     vertical-align: bottom;
+}
+
+
+/*** I don't like your cell phone ***/
+@media only screen and (max-width: 1550px) and (min-width: 950px) {
+  #ttt {
+    flex 0 0 300px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+  }
+   
+    /*
+    #ttt.ttt_sticky {
+      order: 3;
+        flex: 1 1 auto !important;
+      height: unset;
+    background: unset;
+    width: 70%;
+    z-index: 1000;
+        max-width: unset;
+        min-width: unset;
+        position: unset;
+        top: unset;
+        align-self: flex-start;
+        justify-self: flex-start;
+        height: auto;
+        padding: 2.0rem 1.0rem;
+    }
+    */
+    
+    #ttt .search_form #search_terms td, #ttt .search_form #tagfilter td {
+        width: 300px;
+        display: flex;
+    }
+    
+  #ttt input[type="text"] , #ttt input[type="search"] {
+        width: 100%;
+        display: block;
+        min-width: 0 !important;
+    }
+    
+  #ttt select {
+     flex: 1 1 45%;
+     width: 45%;
+    }
+}
+
+
+/*** I don't like your cell phone ***/
+@media only screen and (max-width: 950px) {
+    
+    #nav_userclass,
+    #nav_better,
+    #nav_friends,
+    #nav_donate,
+    #nav_help,
+    #nav_staff,
+    #nav_irc,
+    #logo {
+        display: none !important;
+    }
+    
+    #content {
+        padding: 2.5rem 1.0rem;
+    }
+    
+    #nav_index {
+        display: block !important;
+    }
+    
+    #menu {
+        flex: 1 1 auto;
+    }
+    
+    #header {
+        position: unset !important;
+    }
+    
+    #searchbars ul li {
+        padding: 0.5rem 0.3rem;
+    }
+    
+    #searchbars ul li input:focus {
+        margin-right: 8.0rem;
+    }
+    
+    #userbar {
+        flex: 0 0 auto;
+        padding: 0;
+        align-items: stretch;
+        align-items: center;
+    }
+    
+    #userbar__avatar {
+        margin: 0.5rem;
+        width: 2.0rem;
+        height: 2.0rem;
+        flex: 0 0 auto;
+    }
+    
+    #userbar ul {
+        flex-wrap: nowrap;
+        align-items: stretch;
+        align-items: center;
+    }
+    
+    #userbar ul li {
+        width: 2.75rem;
+        display: block;
+        padding: 0.5rem;
+    }
+    
+    #sss {
+        order: 0;
+        flex: 1 1 auto;
+        display: block;
+        height: unset;
+        max-width: unset;
+        min-width: unset;
+        position: unset;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #17181b;
+    }
+    
+    #ttt {
+        order: 3;
+        position: unset !important;
+        display: block;
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        height: unset !important;
+        margin: 1.0rem 1.0rem;
+        border-radius: 5px;
+        padding: 0.25rem 0.35rem;
+    }
+    
+    #nav_userinfo {
+        margin: 0;
+    }
+    
+    #userinfo_stats {
+        display: none;
+    }
+    
+    #userinfo_minor {
+        justify-content: space-around;
+        flex: 0 0 auto;
+        align-items: center;
+    }
+    
+    #userinfo_minor li {
+        flex: 0 0 auto;
+    }
+    
+    #userinfo_minor li a {
+        padding: 0.5rem 0.25rem;
+        margin: 0;
+    }
+    
+    .new-subscriptions a:after {
+        display: none;
+    }
+    
+    #noty_bottomRight_layout_container {
+        background: #202225;
+        bottom: 0 !important;
+        width: 100% !important;
+        box-shadow: 0 -1px 2px rgba(0, 0, 0, .25);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #noty_bottomRight_layout_container li {
+        flex: 0 0 auto;
+        display: block;
+        padding: 0.5rem 0.25rem !important;
+        margin: 0 !important;
+        line-height: 1.2rem !important;
+    }
+    
+    #noty_bottomRight_layout_container div span, #noty_bottomRight_layout_container a {
+        font-size: 1.0rem !important;
+    }
+    
+    .noty_message, .noty_buttons {
+        display: inline-block;
+        margin: 0 !important;
+        line-height: 1.2rem !important;
+    }
+    
+    .noty_buttons {
+        padding: 0 0.5rem !important;
+    }
+
+    .alertbar a:hover {
+        font-size: 0;
+    }
+
 }
