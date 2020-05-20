@@ -60,7 +60,7 @@ img {
 }
 
 button, input, optgroup, select, textarea {
-    font-family: inherit;
+    font-family: "Segoe UI", Helvetica, Sans-Serif;
     font-size: 100%;
     line-height: 1.2;
     margin: 0
@@ -995,12 +995,15 @@ h4.min_padding:after {
     height: 2.5rem !important;
 }
 
-.read, .unread, .read_locked, .unread_locked, .read_sticky, .unread_sticky {
+.read, .unread, .read_locked, .unread_locked, .read_sticky, .unread_sticky, .read_locked_sticky, .unread_locked_sticky {
     position: relative;
     width: 3.0rem !important;
 }
 
-.read:before, .unread:before, .read_locked:before, .unread_locked:before, .read_sticky:before, .unread_sticky:before {
+.read:before, .unread:before,
+.read_locked:before, .unread_locked:before,
+.read_sticky:before, .unread_sticky:before,
+.read_locked_sticky:before, .unread_locked_sticky:before {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1037,6 +1040,10 @@ h4.min_padding:after {
 }
 
 .read_locked_sticky:before {
+    background-image: url('img/read_locked_sticky.png');
+}
+
+.unread_locked_sticky:before {
     background-image: url('img/read_locked_sticky.png');
 }
 
@@ -1232,6 +1239,23 @@ h4.min_padding:after {
     overflow: hidden;
 }
 
+
+#searchforum div, #searchthread div {
+    padding: 0.5rem;
+    text-align: left;
+    background: #202225;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+#searchforum br, #searchthread br {
+    display: none
+}
+
+#searchforum label {
+    margin-right: 0.75rem;
+}
+
 #userhistory .vertical_margin span:nth-of-type(3), #userhistory .notify_artist span:nth-of-type(3), #userhistory .notify_torrents span:nth-of-type(3), #userhistory .notify_collages span:nth-of-type(3), #userhistory .notify_forums span:nth-of-type(3) {
     border: 1px solid #292b30;
     margin: -2.5rem 2.75rem -0.25rem 0.5rem;
@@ -1380,6 +1404,10 @@ blockquote+br {
     justify-content: center;
     font-size: 0;
     margin: 2.0rem 0;
+}
+
+.linkbox label, .linkbox input {
+    font-size: 0.85rem;
 }
 
 .linkbox strong {
@@ -3038,12 +3066,13 @@ a[href="#requests"] {
 }
 
 #badgesdiv .profile_badge {
-    flex: 1 1 auto !important;
+    flex: 0 0 auto !important;
     margin: 0.5rem;
+    width: 12.5%;
 }
 
 #badgesdiv img {
-    width: 100% !important
+    width: 100% !important;
 }
 
 #user .main_column .box {
