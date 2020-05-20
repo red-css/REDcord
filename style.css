@@ -63,11 +63,11 @@ button, input, optgroup, select, textarea {
     font-family: "Segoe UI", Helvetica, Sans-Serif;
     font-size: 100%;
     line-height: 1.2;
-    margin: 0
+    margin: 0;
 }
 
 button, input {
-    overflow: visible
+    overflow: visible;
 }
 
 button, select {
@@ -587,28 +587,57 @@ td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
     background-size: 0.75rem 0.75rem;
 }
 
-a[href*="musicbrainz.org"] {
-    padding-left: 1.05rem;
-    background: url('img/musicbrainz.png') no-repeat 0.125rem center;
+
+a[href*="musicbrainz.org"],
+a[href*="bandcamp.com"],
+a[href*="discogs.com"],
+a[href*="amazon.com"],
+a[href*="deezer.com"]:hover,
+a[href*="tidal.com"]:hover
+{
     background-size: 0.75rem 0.75rem;
+    background-repeat: no-repeat;
+    background-position: 0.125rem center;
+    padding-left: 1.05rem;
+    font-weight: 600;
+}
+
+a[href*="musicbrainz.org"] {
+    background-image: url('img/musicbrainz.png');
     color: #ba67af;
 }
 
 a[href*="bandcamp.com"] {
-    padding-left: 1.05rem;
-    background: url('img/bandcamp.png') no-repeat 0.125rem center;
-    background-size: 0.75rem 0.75rem;
+    background-image: url('img/bandcamp.png');
     color: #67acb7;
 }
 
 a[href*="discogs.com"] {
-    padding-left: 1.05rem;
-    background: url('img/discogs.png') no-repeat 0.125rem center;
-    background-size: 0.75rem 0.75rem;
+    background-image: url('img/discogs.png');
     color: #dadac5;
 }
 
-a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrainz.org"]:hover {
+a[href*="amazon.com"] {
+    background-image: url('img/amazon.png');
+    color: #febd69;
+}
+
+a[href*="deezer.com"] {
+    background-image: url('img/deezer.png');
+    color: #55e59a;
+}
+
+a[href*="tidal.com"] {
+    background-image: url('img/tidal.png');
+    color: #7fcaef;
+}
+
+a[href*="bandcamp.com"]:hover,
+a[href*="discogs.com"]:hover,
+a[href*="musicbrainz.org"]:hover,
+a[href*="musicbrainz.org"]:hover,
+a[href*="musicbrainz.org"]:hover,
+a[href*="musicbrainz.org"]:hover {
     color: #fff;
 }
 
@@ -743,7 +772,7 @@ select {
     border: 0;
     background: #36393f;
     border-radius: 3px;
-    padding: 0.35rem 0.4rem;
+    padding: 0.2875rem 0.4rem;
     max-width: 100%;
     color: #bebebe;
 }
@@ -2587,7 +2616,7 @@ a[href="#requests"] {
     visibility: visible;
 }
 
-.box_artists li>a, .box_artists li>span>a, .box_contributors li>a {
+.box_artists li>a, .box_contributors li>a {
     font-size: 0.85rem;
     visibility: visible;
 }
@@ -2633,6 +2662,10 @@ a[href="#requests"] {
 .box_addtocollage form input {
     flex: 0 0 40%;
     margin-left: 0;
+}
+
+#yadg_div input, #yadg_div select {
+    width: auto;
 }
 
 .add_torrent_container form {
@@ -4782,8 +4815,8 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-    width: 12px;
-    height: 12px;
+    width: 12px !important;
+    height: 12px !important;
     padding-left: 12px;
     min-height: 12px;
     min-width: 12px;
