@@ -592,8 +592,8 @@ a[href*="musicbrainz.org"],
 a[href*="bandcamp.com"],
 a[href*="discogs.com"],
 a[href*="amazon.com"],
-a[href*="deezer.com"]:hover,
-a[href*="tidal.com"]:hover
+a[href*="deezer.com"],
+a[href*="tidal.com"]
 {
     background-size: 0.75rem 0.75rem;
     background-repeat: no-repeat;
@@ -635,9 +635,9 @@ a[href*="tidal.com"] {
 a[href*="bandcamp.com"]:hover,
 a[href*="discogs.com"]:hover,
 a[href*="musicbrainz.org"]:hover,
-a[href*="musicbrainz.org"]:hover,
-a[href*="musicbrainz.org"]:hover,
-a[href*="musicbrainz.org"]:hover {
+a[href*="amazon.com"]:hover,
+a[href*="deezer.com"]:hover,
+a[href*="tidal.com"]:hover {
     color: #fff;
 }
 
