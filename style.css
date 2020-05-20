@@ -728,7 +728,6 @@ input[type="submit"], input[type="button"], button {
     background: #36393f;
     color: #43b581;
     font-weight: 600;
-    font-family: "Segoe UI";
     margin: 0.25rem;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -738,7 +737,7 @@ input[type="submit"], input[type="button"], button {
     line-height: 1;
     box-sizing: unset;
     overflow: visible;
-    font-size: inherit;
+    font-size: 0.85rem;
     font-family: inherit;
 }
 
