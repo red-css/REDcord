@@ -1036,6 +1036,10 @@ h4.min_padding:after {
     background-image: url('img/read_sticky.png');
 }
 
+.read_locked_sticky:before {
+    background-image: url('img/read_locked_sticky.png');
+}
+
 .forum_index {
     margin: 1.0rem 0;
     color: #73787e;
