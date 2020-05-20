@@ -595,7 +595,10 @@ a[href*="amazon.com"],
 a[href*="deezer.com"],
 a[href*="tidal.com"],
 a[href*="spotify.com"],
-a[href*="itunes.com"]
+a[href*="itunes.com"],
+a[href*="qobuz.com"],
+a[href*="youtube.com"],
+a[href*="beatport.com"]
 {
     background-size: 0.75rem 0.75rem;
     background-repeat: no-repeat;
@@ -644,6 +647,21 @@ a[href*="itunes.com"] {
     color: #ea80fb;
 }
 
+a[href*="youtube.com"] {
+    background-image: url('img/youtube.png');
+    color: #f56e6e;
+}
+
+a[href*="qobuz.com"] {
+    background-image: url('img/qobuz.png');
+    color: #f3d2ae;
+}
+
+a[href*="beatport.com"] {
+    background-image: url('img/beatport.png');
+    color: #a8e00f;
+}
+
 
 a[href*="bandcamp.com"]:hover,
 a[href*="discogs.com"]:hover,
@@ -652,7 +670,10 @@ a[href*="amazon.com"]:hover,
 a[href*="deezer.com"]:hover,
 a[href*="tidal.com"]:hover,
 a[href*="spotify.com"]:hover,
-a[href*="itunes.com"]:hover {
+a[href*="itunes.com"]:hover,
+a[href*="youtube.com"]:hover,
+a[href*="qobuz.com"]:hover,
+a[href*="beatport.com"]:hover {
     color: #fff;
 }
 
