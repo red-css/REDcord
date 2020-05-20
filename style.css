@@ -4996,4 +4996,39 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         font-size: 0;
     }
 
+    
+    #index .sidebar .box:not(:nth-of-type(4)):not(:nth-of-type(5)),
+    #index .sidebar .box:first-of-type /* feat album */ {
+        display: none;    
+    }
+    
+    #index #ttt {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #index .sidebar .box {
+        background: #202225;
+        border-radius: 5px;
+        padding: 0.75rem;
+    }
+    #index .sidebar .box:nth-of-type(4),
+    #index .sidebar .box:nth-of-type(5),
+    #index .sidebar .box:nth-of-type(4) li,
+    #index .sidebar .box:nth-of-type(5) li {
+        font-size: 0.75rem !important;
+    }
+    
+    #index .sidebar .box:nth-of-type(5) ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #index .sidebar .box:nth-of-type(5) ul li {
+        flex: 0 0 48%;
+    }
+    
+    
 }
