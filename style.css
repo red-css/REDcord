@@ -1623,10 +1623,6 @@ ul.poll li.graph {
     white-space: nowrap;
 }
 
-.box_request_desc ol li:hover::before, .torrent_description ol li:hover::before {
-    margin-right: 0.65em;
-}
-
 .torrent_description .head {
     font-size: 0;
     padding: 0 0.4rem;
