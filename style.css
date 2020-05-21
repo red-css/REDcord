@@ -1451,14 +1451,12 @@ blockquote+br {
 .size4 {
     font-size: 1.4rem;
     padding: 0.5rem 0rem;
-    display: inline-block;
     line-height: 1.75rem;
 }
 
 .size3 {
     font-size: 1.35rem;
     padding: 0.5rem;
-    display: inline-block;
 }
 
 .size7 strong, .size6 strong, .size5 strong, .size4 strong, .size3 strong, .size2 strong {
