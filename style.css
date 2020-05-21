@@ -104,6 +104,10 @@ progress {
     vertical-align: baseline
 }
 
+iframe {
+   max-width: 100%;
+}
+
 textarea {
     overflow: auto;
     resize: vertical;
