@@ -1503,16 +1503,6 @@ blockquote+br {
     content: '';
 }
 
-.scale_image {
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
-    border: 1px solid #111;
-    cursor: pointer;
-}
-
-.scale_image:hover {
-    box-shadow: 0 0 5px 2px rgba( 0, 0, 0, .4);
-}
-
 #forums #threadpoll .head {
     font-size: 1.3rem;
 }
