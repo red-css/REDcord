@@ -4040,6 +4040,35 @@ ul.collage_images li:hover span {
     padding: 0.25rem 0.5rem;
 }
 
+div.wbbcode {
+    width: 100% !important;
+}
+
+.wbbbuttons {
+    display: flex;
+    width: 100%;
+}
+
+.wbbcode .wbbbuttons button.whutbbutton {
+    flex: 0 0 auto;
+    background: transparent !important;
+    box-shadow: none;
+    border: 0;
+    color: #ccc;
+    padding: 0.35rem;
+    animation: none;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+.wbbcode.wbbimg .wbbbuttons button.whutbbutton span {
+    filter: brightness(200%);
+}
+
+.wbbcode.wbbimg .wbbbuttons button.whutbbutton:hover span {
+    filter: brightness(300%);
+}
+
 .chart-text {
     fill: #fff
 }
