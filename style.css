@@ -4047,6 +4047,7 @@ div.wbbcode {
 .wbbbuttons {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .wbbcode .wbbbuttons button.whutbbutton {
