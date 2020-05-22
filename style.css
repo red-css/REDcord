@@ -4054,14 +4054,6 @@ div.wbbcode {
     text-shadow: none;
 }
 
-.wbbcode.wbbimg .wbbbuttons button.whutbbutton span {
-    filter: brightness(200%);
-}
-
-.wbbcode.wbbimg .wbbbuttons button.whutbbutton:hover span {
-    filter: brightness(300%);
-}
-
 .chart-text {
     fill: #fff
 }
