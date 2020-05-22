@@ -5069,7 +5069,7 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
 }
 
 .wbbbuttons button {
-    filter: brightness(50%);
+    filter: saturate(0) brightness(50%);
 }
 
 .wbbbuttons button:hover {
