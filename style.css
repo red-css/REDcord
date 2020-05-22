@@ -730,12 +730,12 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     background: #5778ab;
 }
 
-input[value="Remove"], input[value="Delete"], input[value="Reset"] {
+input[value="Remove"], input[value="Delete"], input[value="Delete message(s)"], input[value="Reset"], input[value="Cancel"] {
     background: #be4a4a;
     color: #fef6f6;
 }
 
-input[value="Remove"]:hover, input[value="Delete"]:focus, input[value="Reset"]:focus {
+input[value="Remove"]:hover, input[value="Delete"]:focus, input[value="Delete message(s)"]:focus, input[value="Reset"]:focus, input[value="Cancel"]:focus {
     background: #ac3535;
 }
 
