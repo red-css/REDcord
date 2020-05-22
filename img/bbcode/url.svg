@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;}
+	.st2{fill:#CECECE;}
+	.st3{font-family:'SitkaText-Bold';}
+	.st4{font-size:53px;}
+	.st5{font-family:'SitkaText-Italic';}
+	.st6{font-family:'SitkaText';}
+	.st7{font-size:48px;}
+	.st8{font-family:'SitkaHeading';}
+	.st9{font-size:36px;}
+	.st10{font-family:'Consolas-Bold';}
+	.st11{font-size:24px;}
+	.st12{letter-spacing:-2;}
+	.st13{font-size:32px;}
+	.st14{font-size:40px;}
+	.st15{display:inline;fill:#CECECE;}
+	.st16{font-size:15px;}
+	.st17{font-size:60px;}
+	.st18{font-family:'Consolas';}
+	.st19{font-size:25px;}
+	.st20{fill:none;stroke:#CECECE;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st21{fill:#75B6CC;}
+	.st22{fill:#63E58E;}
+	.st23{display:inline;opacity:0.5;fill:#CECECE;}
+	.st24{display:inline;fill:none;stroke:#CECECE;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st25{display:inline;fill:#64CC66;}
+	.st26{display:inline;fill:#5B90C4;}
+	.st27{display:inline;fill:#CC5A5A;}
+	.st28{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.1216 36.4629)" class="st2 st3 st4">B</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 10.1538 36.4629)" class="st2 st5 st4">I</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.4004 33.0234)" class="st2 st6 st7" style="text-decoration: underline;">U</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 5.1016 36.4629)" class="st2 st6 st4" style="text-decoration: line-through;">S</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 9.9185 36.4629)" class="st2 st3 st4">!</text>
+	<rect x="0.5" y="8" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 1.2441 32.4082)" class="st2 st8 st9">h2</text>
+	<rect y="11" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.5591 27.5596)" class="st2 st10 st11 st12">&lt;/&gt;</text>
+	<rect x="10" y="13" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 21.46 33.0156)" class="st2 st6 st13">t</text>
+	<rect x="-7" y="7.5" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 0.4849 33.0195)" class="st2 st6 st14">T</text>
+	<rect x="-24" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 4.3936 10.3198)"><tspan x="0" y="0" class="st15 st6 st16">1.</tspan><tspan x="-1.7" y="12" class="st15 st6 st16">2.</tspan><tspan x="-1.5" y="24" class="st15 st6 st16">3.</tspan></text>
+	<rect x="-16" y="9" class="st1" width="72" height="72"/>
+	<text transform="matrix(1 0 0 1 4.3071 50.2793)" class="st2 st3 st17">“</text>
+	<rect y="8" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 7.324219e-03 25.2495)" class="st2 st18 st19">pre</text>
+	<line class="st20" x1="20" y1="7" x2="35.5" y2="7"/>
+	<line class="st20" x1="20.5" y1="19.8" x2="36" y2="19.8"/>
+	<line class="st20" x1="20.5" y1="32.5" x2="36" y2="32.5"/>
+	<circle class="st2" cx="8" cy="7" r="3"/>
+	<circle class="st2" cx="8" cy="20" r="3"/>
+	<circle class="st2" cx="8" cy="33" r="3"/>
+	<rect x="-41.2" y="-24" class="st1" width="14.6" height="14.8"/>
+</g>
+<g id="Layer_8">
+	<path class="st21" d="M36,20.7c-0.3,8.2-6.8,14.8-15,15.3c1-1.3,1.7-3.3,4-5c4-3-2-3-4-2s-4-6-5-10s-7,0-6,5c0.8,4-1.6,3.9-2.6,5.9
+		C5.3,27.2,4,23.7,4,20C4,12.5,9.2,6.2,16.2,4.5C13.7,6.7,11.6,9.8,14,9c3-1,10,1,10,3s3,12,4,9s0-9,2-8s2,8,4,8
+		C34.6,21,35.3,20.9,36,20.7z"/>
+	<path class="st22" d="M25,31c-2.3,1.7-2.9,3.7-4,5c-0.3,0-0.7,0-1,0c-5.1,0-9.6-2.4-12.6-6.1c1-2,3.4-1.9,2.6-5.9c-1-5,5-9,6-5
+		s3,11,5,10S29,28,25,31z"/>
+	<path class="st22" d="M36,20c0,0.2,0,0.5,0,0.7c-0.7,0.2-1.4,0.3-2,0.3c-2,0-2-7-4-8s-1,5-2,8s-4-7-4-9s-7-4-10-3
+		c-2.4,0.8-0.3-2.3,2.2-4.5C17.4,4.2,18.7,4,20,4C28.8,4,36,11.2,36,20z"/>
+</g>
+<g id="pad" class="st0">
+	<rect x="3" y="6.5" class="st23" width="34" height="27"/>
+	<line class="st24" x1="20" y1="7.8" x2="16.5" y2="11.3"/>
+	<line class="st24" x1="20" y1="7.8" x2="23.5" y2="11.3"/>
+	<line class="st24" x1="20" y1="32.3" x2="23.5" y2="28.8"/>
+	<line class="st24" x1="20" y1="32.3" x2="16.5" y2="28.8"/>
+	<line class="st24" x1="35.8" y1="20" x2="32.3" y2="16.5"/>
+	<line class="st24" x1="35.8" y1="20" x2="32.3" y2="23.5"/>
+	<line class="st24" x1="4.3" y1="20" x2="7.8" y2="23.5"/>
+	<line class="st24" x1="4.3" y1="20" x2="7.8" y2="16.5"/>
+</g>
+<g id="Layer_4" class="st0">
+	<rect x="9" y="6" class="st15" width="22" height="3"/>
+	<rect x="4" y="14.3" class="st15" width="32" height="3"/>
+	<rect x="10" y="22.7" class="st15" width="20" height="3"/>
+	<rect x="2" y="31" class="st15" width="36" height="3"/>
+</g>
+<g id="Layer_5" class="st0">
+	<rect x="2" y="6" class="st15" width="22" height="3"/>
+	<rect x="2" y="14.3" class="st15" width="32" height="3"/>
+	<rect x="2" y="22.7" class="st15" width="20" height="3"/>
+	<rect x="2" y="31" class="st15" width="36" height="3"/>
+</g>
+<g id="Layer_6" class="st0">
+	<rect x="16" y="6" class="st15" width="22" height="3"/>
+	<rect x="6" y="14.3" class="st15" width="32" height="3"/>
+	<rect x="18" y="22.7" class="st15" width="20" height="3"/>
+	<rect x="2" y="31" class="st15" width="36" height="3"/>
+</g>
+<g id="color" class="st0">
+	<circle class="st25" cx="26" cy="25" r="10"/>
+	<circle class="st26" cx="14" cy="25" r="10"/>
+	<circle class="st27" cx="20" cy="15" r="10"/>
+</g>
+<g id="Layer_2">
+	<line class="st28" x1="-3" y1="33" x2="-28" y2="33"/>
+	<line class="st28" x1="-3" y1="8" x2="-28" y2="8"/>
+</g>
+</svg>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;}
+	.st2{fill:#CECECE;}
+	.st3{font-family:'SitkaText-Bold';}
+	.st4{font-size:53px;}
+	.st5{font-family:'SitkaText-Italic';}
+	.st6{font-family:'SitkaText';}
+	.st7{font-size:48px;}
+	.st8{font-family:'SitkaHeading';}
+	.st9{font-size:36px;}
+	.st10{font-family:'Consolas-Bold';}
+	.st11{font-size:24px;}
+	.st12{letter-spacing:-2;}
+	.st13{display:inline;fill:#CECECE;}
+	.st14{font-size:32px;}
+	.st15{font-size:40px;}
+	.st16{letter-spacing:1;}
+	.st17{display:inline;fill:#64CC66;}
+	.st18{display:inline;fill:#5B90C4;}
+	.st19{display:inline;fill:#CC5A5A;}
+	.st20{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.1216 36.4629)" class="st2 st3 st4">B</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 10.1538 36.4629)" class="st2 st5 st4">I</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.4004 33.0234)" class="st2 st6 st7" style="text-decoration: underline;">U</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 5.1016 36.4629)" class="st2 st6 st4" style="text-decoration: line-through;">S</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 9.9185 36.4629)" class="st2 st3 st4">!</text>
+	<rect y="8" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 14.1201 32.4082)" class="st2 st8 st9">t</text>
+	<rect y="11" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 2.5591 27.5596)" class="st2 st10 st11 st12">&lt;/&gt;</text>
+	<rect x="10" y="13" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 21.46 33.0156)" class="st13 st6 st14">t</text>
+	<rect x="-7" y="7.5" class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 0.4849 33.0195)" class="st13 st6 st15">T</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 9.9185 36.4629)" class="st2 st3 st4 st16">!</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 9.9185 36.4629)" class="st2 st3 st4">!</text>
+	<rect class="st1" width="40" height="40"/>
+	<text transform="matrix(1 0 0 1 9.9185 36.4629)" class="st2 st3 st4 st16">!</text>
+</g>
+<g id="Layer_4" class="st0">
+	<rect x="9" y="6" class="st13" width="22" height="3"/>
+	<rect x="4" y="14.3" class="st13" width="32" height="3"/>
+	<rect x="10" y="22.7" class="st13" width="20" height="3"/>
+	<rect x="2" y="31" class="st13" width="36" height="3"/>
+</g>
+<g id="Layer_5">
+	<rect x="2" y="6" class="st2" width="22" height="3"/>
+	<rect x="2" y="14.3" class="st2" width="32" height="3"/>
+	<rect x="2" y="22.7" class="st2" width="20" height="3"/>
+	<rect x="2" y="31" class="st2" width="36" height="3"/>
+</g>
+<g id="Layer_6" class="st0">
+	<rect x="9" y="-14" class="st13" width="22" height="3"/>
+	<rect x="4" y="-5.7" class="st13" width="32" height="3"/>
+	<rect x="10" y="2.7" class="st13" width="20" height="3"/>
+	<rect x="2" y="11" class="st13" width="36" height="3"/>
+</g>
+<g id="color" class="st0">
+	<circle class="st17" cx="26" cy="25" r="10"/>
+	<circle class="st18" cx="14" cy="25" r="10"/>
+	<circle class="st19" cx="20" cy="15" r="10"/>
+</g>
+<g id="Layer_2">
+	<line class="st20" x1="-3" y1="33" x2="-28" y2="33"/>
+	<line class="st20" x1="-3" y1="8" x2="-28" y2="8"/>
+</g>
+</svg>
