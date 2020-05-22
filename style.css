@@ -730,12 +730,12 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     background: #5778ab;
 }
 
-input[value="Remove"], input[value="Delete"] {
+input[value="Remove"], input[value="Delete"], input[value="Reset"] {
     background: #be4a4a;
     color: #fef6f6;
 }
 
-input[value="Remove"]:hover, input[value="Delete"]:focus {
+input[value="Remove"]:hover, input[value="Delete"]:focus, input[value="Reset"]:focus {
     background: #ac3535;
 }
 
