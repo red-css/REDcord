@@ -4028,6 +4028,10 @@ ul.collage_images li:hover span {
     padding: 0.25rem 0.5rem;
 }
 
+textarea.wbbarea {
+   margin: 0.25rem 0 0.5rem;    
+}
+
 div.wbbcode {
     width: 100% !important;
 }
