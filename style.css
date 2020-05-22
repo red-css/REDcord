@@ -105,7 +105,7 @@ progress {
 }
 
 iframe {
-   max-width: 100%;
+    max-width: 100%;
 }
 
 textarea {
@@ -252,7 +252,7 @@ strong, .breadcrumbs {
 
 .clear_flex {
     order: 4;
-    flex:  1 1 100%;
+    flex: 1 1 100%;
     height: 0;
 }
 
@@ -591,19 +591,7 @@ td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
     background-size: 0.75rem 0.75rem;
 }
 
-
-a[href*="musicbrainz.org"],
-a[href*="bandcamp.com"],
-a[href*="discogs.com"],
-a[href*="amazon.com"],
-a[href*="deezer.com"],
-a[href*="tidal.com"],
-a[href*="spotify.com"],
-a[href*="itunes.com"],
-a[href*="qobuz.com"],
-a[href*="youtube.com"],
-a[href*="beatport.com"]
-{
+a[href*="musicbrainz.org"], a[href*="bandcamp.com"], a[href*="discogs.com"], a[href*="amazon.com"], a[href*="deezer.com"], a[href*="tidal.com"], a[href*="spotify.com"], a[href*="itunes.com"], a[href*="qobuz.com"], a[href*="youtube.com"], a[href*="beatport.com"] {
     background-size: 0.75rem 0.75rem;
     background-repeat: no-repeat;
     background-position: 0.125rem center;
@@ -666,18 +654,7 @@ a[href*="beatport.com"] {
     color: #a8e00f;
 }
 
-
-a[href*="bandcamp.com"]:hover,
-a[href*="discogs.com"]:hover,
-a[href*="musicbrainz.org"]:hover,
-a[href*="amazon.com"]:hover,
-a[href*="deezer.com"]:hover,
-a[href*="tidal.com"]:hover,
-a[href*="spotify.com"]:hover,
-a[href*="itunes.com"]:hover,
-a[href*="youtube.com"]:hover,
-a[href*="qobuz.com"]:hover,
-a[href*="beatport.com"]:hover {
+a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrainz.org"]:hover, a[href*="amazon.com"]:hover, a[href*="deezer.com"]:hover, a[href*="tidal.com"]:hover, a[href*="spotify.com"]:hover, a[href*="itunes.com"]:hover, a[href*="youtube.com"]:hover, a[href*="qobuz.com"]:hover, a[href*="beatport.com"]:hover {
     color: #fff;
 }
 
@@ -719,7 +696,6 @@ a[href*="beatport.com"]:hover {
     width: 100%;
     border: 1px solid transparent;
     transition: .1s linear all;
-    
 }
 
 #searchbars input:focus {
@@ -745,7 +721,6 @@ input[type="submit"], input[type="button"], button {
     font-family: inherit;
 }
 
-
 input[type="submit"], input[type="button"], button {
     background: #6688ba;
     color: #fdfdfe;
@@ -754,7 +729,6 @@ input[type="submit"], input[type="button"], button {
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     background: #5778ab;
 }
-
 
 input[value="Remove"], input[value="Delete"] {
     background: #be4a4a;
@@ -1010,12 +984,14 @@ code {
     font-size: 90%;
     border-radius: 2px;
 }
+
 /*************** Upload ***************/
-#upload #content > .box {
+
+#upload #content>.box {
     width: 100% !important;
 }
 
-#upload #content .thin > p {
+#upload #content .thin>p {
     margin: 0;
     margin: 0 0 2.0rem 0;
     background: rgba(0, 0, 0, .1);
@@ -1023,10 +999,10 @@ code {
     padding: 1.0rem;
 }
 
-#upload #content .thin > p input {
+#upload #content .thin>p input {
     margin-top: 1.0rem;
-
 }
+
 #upload .label {
     white-space: nowrap;
     width: 15%;
@@ -1044,10 +1020,12 @@ code {
 #upload #upload_table input[size="5"] {
     min-width: 4.0rem;
 }
+
 #dnulist {
     max-width: 70%;
     margin: 0 auto;
 }
+
 #dnulist tr:not(.colhead) {
     vertical-align: top;
     border-top: 1px solid #3f4145;
@@ -1058,6 +1036,7 @@ code {
     width: 30%;
     font-weight: 600;
 }
+
 #dnulist td:nth-of-type(2) {
     color: #7a7c7f;
 }
@@ -1089,10 +1068,7 @@ h4.min_padding:after {
     width: 3.0rem !important;
 }
 
-.read:before, .unread:before,
-.read_locked:before, .unread_locked:before,
-.read_sticky:before, .unread_sticky:before,
-.read_locked_sticky:before, .unread_locked_sticky:before {
+.read:before, .unread:before, .read_locked:before, .unread_locked:before, .read_sticky:before, .unread_sticky:before, .read_locked_sticky:before, .unread_locked_sticky:before {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1147,8 +1123,7 @@ h4.min_padding:after {
     padding-top: 0.25rem;
 }
 
-#dnulist .colhead,
-.request_table .colhead_dark, #collage .colhead, #collage .colhead_dark, .staff .colhead, .message_table .colhead, .forum_index .colhead {
+#dnulist .colhead, .request_table .colhead_dark, #collage .colhead, #collage .colhead_dark, .staff .colhead, .message_table .colhead, .forum_index .colhead {
     color: #53575e;
     font-variant: small-caps;
 }
@@ -1327,7 +1302,6 @@ h4.min_padding:after {
     font-size: 0;
     overflow: hidden;
 }
-
 
 #searchforum div, #searchthread div {
     padding: 0.5rem;
@@ -2670,6 +2644,12 @@ a[href="#requests"] {
     white-space: nowrap;
 }
 
+.box_artists .artists_label {
+    visibility: visible;
+    display: block;
+    padding-top: 0.25rem;
+}
+
 .box_addtag .body strong {
     display: none;
 }
@@ -3018,8 +2998,7 @@ a[href="#requests"] {
 #taglist,
 /* in search*/
 
-#nav_index,
-#similar_artist_map, #torrents a[name="comments"], #artist a[name="comments"], #collage .box_category, #nav_logout, #nav_useredit, .sticky_post_label, #stats_required, .noty_button_close {
+#nav_index, #similar_artist_map, #torrents a[name="comments"], #artist a[name="comments"], #collage .box_category, #nav_logout, #nav_useredit, .sticky_post_label, #stats_required, .noty_button_close {
     display: none !important;
 }
 
@@ -4050,7 +4029,7 @@ ul.collage_images li:hover span {
 }
 
 textarea.wbbarea {
-   margin: 0.25rem 0 0.5rem;    
+    margin: 0.25rem 0 0.5rem;
 }
 
 div.wbbcode {
@@ -4906,16 +4885,15 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
     vertical-align: bottom;
 }
 
-
 /*** I don't like your cell phone ***/
+
 @media only screen and (max-width: 1550px) and (min-width: 950px) {
-  #ttt {
-    flex 0 0 300px;
-    width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-  }
-   
+    #ttt {
+        flex 0 0 300px;
+        width: 100%;
+        max-width: 300px;
+        min-width: 300px;
+    }
     /*
     #ttt.ttt_sticky {
       order: 3;
@@ -4934,89 +4912,67 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         padding: 2.0rem 1.0rem;
     }
     */
-    
     #ttt .search_form #search_terms td, #ttt .search_form #tagfilter td {
         width: 300px;
         display: flex;
     }
-    
-  #ttt input[type="text"] , #ttt input[type="search"] {
+    #ttt input[type="text"], #ttt input[type="search"] {
         width: 100%;
         display: block;
         min-width: 0 !important;
     }
-    
-  #ttt select {
-     flex: 1 1 45%;
-     width: 45%;
+    #ttt select {
+        flex: 1 1 45%;
+        width: 45%;
     }
 }
 
-
 /*** I don't like your cell phone ***/
+
 @media only screen and (max-width: 950px) {
-    
-    #nav_userclass,
-    #nav_better,
-    #nav_friends,
-    #nav_donate,
-    #nav_help,
-    #nav_staff,
-    #nav_irc,
-    #logo {
+    #nav_userclass, #nav_better, #nav_friends, #nav_donate, #nav_help, #nav_staff, #nav_irc, #logo {
         display: none !important;
     }
-    
     #content {
         padding: 2.5rem 1.0rem;
     }
-    
     #nav_index {
         display: block !important;
     }
-    
     #menu {
         flex: 1 1 auto;
     }
-    
     #header {
         position: unset !important;
     }
-    
     #searchbars ul li {
         padding: 0.5rem 0.3rem;
     }
-    
     #searchbars ul li input:focus {
         margin-right: 8.0rem;
     }
-    
     #userbar {
         flex: 0 0 auto;
         padding: 0;
         align-items: stretch;
         align-items: center;
     }
-    
     #userbar__avatar {
         margin: 0.5rem;
         width: 2.0rem;
         height: 2.0rem;
         flex: 0 0 auto;
     }
-    
     #userbar ul {
         flex-wrap: nowrap;
         align-items: stretch;
         align-items: center;
     }
-    
     #userbar ul li {
         width: 2.75rem;
         display: block;
         padding: 0.5rem;
     }
-    
     #sss {
         order: 0;
         flex: 1 1 auto;
@@ -5031,7 +4987,6 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         justify-content: space-between;
         background: #17181b;
     }
-    
     #ttt {
         order: 3;
         position: unset !important;
@@ -5044,34 +4999,27 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         border-radius: 5px;
         padding: 0.25rem 0.35rem;
     }
-    
     #nav_userinfo {
         margin: 0;
     }
-    
     #userinfo_stats {
         display: none;
     }
-    
     #userinfo_minor {
         justify-content: space-around;
         flex: 0 0 auto;
         align-items: center;
     }
-    
     #userinfo_minor li {
         flex: 0 0 auto;
     }
-    
     #userinfo_minor li a {
         padding: 0.5rem 0.25rem;
         margin: 0;
     }
-    
     .new-subscriptions a:after {
         display: none;
     }
-    
     #noty_bottomRight_layout_container {
         background: #202225;
         bottom: 0 !important;
@@ -5080,7 +5028,6 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         display: flex;
         justify-content: space-between;
     }
-    
     #noty_bottomRight_layout_container li {
         flex: 0 0 auto;
         display: block;
@@ -5088,58 +5035,43 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         margin: 0 !important;
         line-height: 1.2rem !important;
     }
-    
     #noty_bottomRight_layout_container div span, #noty_bottomRight_layout_container a {
         font-size: 1.0rem !important;
     }
-    
     .noty_message, .noty_buttons {
         display: inline-block;
         margin: 0 !important;
         line-height: 1.2rem !important;
     }
-    
     .noty_buttons {
         padding: 0 0.5rem !important;
     }
-
     .alertbar a:hover {
         font-size: 0;
     }
-
-    
-    #index .sidebar .box:not(:nth-of-type(4)):not(:nth-of-type(5)),
-    #index .sidebar .box:first-of-type /* feat album */ {
-        display: none;    
+    #index .sidebar .box:not(:nth-of-type(4)):not(:nth-of-type(5)), #index .sidebar .box:first-of-type/* feat album */
+        {
+        display: none;
     }
-    
     #index #ttt {
         background: transparent;
         padding: 0;
         margin: 0;
     }
-    
     #index .sidebar .box {
         background: #202225;
         border-radius: 5px;
         padding: 0.75rem;
     }
-    #index .sidebar .box:nth-of-type(4),
-    #index .sidebar .box:nth-of-type(5),
-    #index .sidebar .box:nth-of-type(4) li,
-    #index .sidebar .box:nth-of-type(5) li {
+    #index .sidebar .box:nth-of-type(4), #index .sidebar .box:nth-of-type(5), #index .sidebar .box:nth-of-type(4) li, #index .sidebar .box:nth-of-type(5) li {
         font-size: 0.75rem !important;
     }
-    
     #index .sidebar .box:nth-of-type(5) ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
     #index .sidebar .box:nth-of-type(5) ul li {
         flex: 0 0 48%;
     }
-    
-    
 }
