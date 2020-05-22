@@ -5075,3 +5075,156 @@ img[src="https://redacted.ch/static/common/symbols/disabled.png"], img[src="stat
         flex: 0 0 48%;
     }
 }
+
+.wbbbuttons button {
+    filter: brightness(50%);
+}
+
+.wbbbuttons button:hover {
+    filter: none;
+}
+
+button [class^=icon-],
+button [class*=" icon-"] {
+   height: 20px !important;
+   width: 20px !important;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+
+button[name="b"] span {
+    background-image: url('img/bbcode/bold.svg');
+}
+
+button[name="i"] span {
+    background-image: url('img/bbcode/italic.svg');
+}
+
+button[name="u"] span {
+    background-image: url('img/bbcode/underline.svg');
+}
+
+button[name="s"] span {
+    background-image: url('img/bbcode/strikethrough.svg');
+}
+
+button[name="important"] span {
+    background-image: url('img/bbcode/important.svg');
+}
+
+button[name="heading"] span {
+    background-image: url('img/bbcode/heading.svg');
+}
+
+button[name="code"] span {
+    background-image: url('img/bbcode/code.svg');
+}
+
+button[name="color"] span {
+    background-image: url('img/bbcode/color.svg');
+}
+
+button[name="size"] span {
+    background-image: url('img/bbcode/size.svg');
+}
+
+button[name="gz_left"] span {
+    background-image: url('img/bbcode/gz_left.svg');
+}
+
+button[name="gz_center"] span {
+    background-image: url('img/bbcode/gz_center.svg');
+}
+
+button[name="gz_right"] span {
+    background-image: url('img/bbcode/gz_right.svg');
+}
+
+button[name="pad"] span {
+    background-image: url('img/bbcode/pad.svg');
+}
+
+button[name="#"] span {
+    background-image: url('img/bbcode/ol.svg');
+}
+
+button[name="*"] span {
+    background-image: url('img/bbcode/ul.svg');
+}
+
+button[name="url"] span {
+    background-image: url('img/bbcode/url.svg');
+}
+
+button[name="img"] span {
+    background-image: url('img/bbcode/img.svg');
+}
+
+button[name="quote"] span {
+    background-image: url('img/bbcode/quote.svg');
+}
+
+button[name="pre"] span {
+    background-image: url('img/bbcode/pre.svg');
+}
+
+button[name="php"] span {
+    background-image: url('img/bbcode/php.svg');
+}
+
+button[name="hide"] span {
+    background-image: url('img/bbcode/hide.svg');
+}
+
+button[name="mature"] span {
+    background-image: url('img/bbcode/mature.svg');
+}
+
+button[name="artist"] span {
+    background-image: url('img/bbcode/artist.svg');
+}
+
+button[name="torrent"] span {
+    background-image: url('img/bbcode/torrent.svg');
+}
+
+button[name="user"] span {
+    background-image: url('img/bbcode/user.svg');
+}
+
+button[name="wiki"] span {
+    background-image: url('img/bbcode/wiki.svg');
+}
+
+button[name="gz_rule"] span {
+    background-image: url('img/bbcode/gz_rule.svg');
+}
+
+button[name="tex"] span {
+    background-image: url('img/bbcode/tex.svg');
+}
+
+button[name="plain"] span {
+    background-image: url('img/bbcode/plain.svg');
+}
+
+button[name="hr"] span {
+    background-image: url('img/bbcode/hr.svg');
+}
+
+button[name="erase"] span {
+    background-image: url('img/bbcode/erase.svg');
+}
+
+button[name="emoticon"] span {
+    background-image: url('img/bbcode/emoticon.svg');
+}
+
+button[name="settings"] span {
+    background-image: url('img/bbcode/settings.svg');
+}
+
+button[name="shortcut"] span {
+    background-image: url('img/bbcode/shortcut.svg');
+}
