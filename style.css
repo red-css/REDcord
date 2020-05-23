@@ -1457,11 +1457,17 @@ blockquote+br {
     font-size: 1.4rem;
     padding: 0.5rem 0rem;
     line-height: 1.75rem;
+    display: inline-block;
 }
 
 .size3 {
     font-size: 1.35rem;
     padding: 0.5rem;
+}
+
+.size7, .size6, .size5, .size4, .size3, .size2, .size1 {
+    display: inline-block;
+    color: #ecc894;
 }
 
 .size7 strong, .size6 strong, .size5 strong, .size4 strong, .size3 strong, .size2 strong {
@@ -1580,8 +1586,6 @@ ul.poll li.graph {
 /************** Torrents ************************/
 
 #torrent_details {
-    padding: 2.0rem;
-    border-radius: 5px;
 }
 
 #torrent_details .number_column {
@@ -1661,9 +1665,10 @@ ul.poll li.graph {
     line-height: 2.25rem;
 }
 
-.torrent_description .head strong {
+.torrent_description .head strong, #torrents .main_column .box .head strong {
     font-size: 1.3rem;
     font-weight: 200;
+    color: #ecc894;
 }
 
 .torrent_description .head a {
@@ -1673,6 +1678,7 @@ ul.poll li.graph {
 
 .torrent_description .body {
     padding: 0rem 0.5rem 2.0rem 0.5rem;
+    line-height: 1.4rem;
 }
 
 .box_addcomment form input {
@@ -1693,11 +1699,54 @@ ul.poll li.graph {
 
 #torrents .vote_matches_table, #torrents .collage_table {
     margin-top: 2.0rem;
+    font-size: 0.85rem;
 }
 
+#torrents .vote_matches_table a, #torrents .collage_table a {
+    color: #aaa;
+    font-weight: 500;
+}
+
+
+#torrents .collage_table tr:not(.colhead), #torrents .vote_matches_table tr:not(.colhead) {
+    border-left: 1px solid #202225;
+    border-right: 1px solid #202225;
+    background: #292b2f;
+}
+
+#torrents .collage_table .colhead + tr, #torrents .vote_matches_table .colhead + tr {
+    border-top: 1px solid #202225;
+    border-radius: 4px;
+}
+
+#torrents .vote_matches_table tr:last-of-type {
+    border-bottom: 1px solid #202225;
+    border-radius: 4px;
+}
+
+#torrents .collage_table {
+    border-bottom: 1px solid #202225;
+    border-radius: 4px;
+}
+
+/*
 #torrents .collage_table .colhead a {
     display: none;
 }
+*/
+
+#torrents .collage_table .colhead a:nth-of-type(1), #torrents .vote_matches_table .colhead a:nth-of-type(1) {
+    height: 0.85rem;
+    width: 0.85rem;
+    line-height: 0.85rem;
+    background: url('img/uparrow.svg') no-repeat center center;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    text-indent: 100px;
+    overflow: hidden;
+}
+
 
 #torrents .vote_matches_table tr:not(.colhead):hover, #user .request_table tr:not(.colhead_dark):hover, #torrents .collage_table tr:not(.colhead):hover {
     background: #2b2d32;
@@ -1707,6 +1756,11 @@ ul.poll li.graph {
     font-size: 1.3rem;
     font-weight: 200;
     padding: 0.5rem 0.4rem;
+    
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #cecece;
 }
 
 #torrents .collage_table td:nth-of-type(2) {
@@ -2280,6 +2334,10 @@ a[href="#torrents_album"] {
 .snatched_group.group_torrent a {
     color: #8d7861;
 }
+
+#torrent_details a {
+   color: #78c4de; 
+   }
 
 .group_torrent a:hover {
     color: #fff;
