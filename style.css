@@ -935,6 +935,7 @@ h1 a {
 h1 {
     font-size: 2.0rem;
     font-weight: 200;
+   line-height: 2.25rem;
 }
 
 .header h2 strong, .header h2 span, h2 {
@@ -942,6 +943,7 @@ h1 {
     font-size: 1.75rem;
     margin-bottom: 2.0rem;
     color: #dedede;
+   line-height: 2.0rem;
 }
 
 h2 a {
@@ -953,6 +955,7 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: 1.0rem;
     color: #ecc894;
+   line-height: 1.75rem;
 }
 
 .box h3 {
@@ -963,12 +966,14 @@ h4 {
     font-weight: 400;
     font-size: 1.3rem;
     margin-bottom: 0.75rem;
+   line-height: 1.55rem;
 }
 
 .box h4 {
     font-size: 1.05rem;
     font-weight: 400;
     color: #b58862;
+   line-height: 1.3rem;
 }
 
 .box h5 {
