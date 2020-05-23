@@ -735,7 +735,7 @@ input[value="Remove"], input[value="Delete"], input[value="Delete message(s)"], 
     color: #fef6f6;
 }
 
-input[value="Remove"]:hover, input[value="Delete"]:focus, input[value="Delete message(s)"]:focus, input[value="Reset"]:focus, input[value="Cancel"]:focus {
+input[value="Remove"]:hover, input[value="Delete"]:hover, input[value="Delete message(s)"]:hover, input[value="Reset"]:hover, input[value="Cancel"]:hover {
     background: #ac3535;
 }
 
@@ -5203,6 +5203,10 @@ button[name="plain"] span {
 
 button[name="hr"] span {
     background-image: url('img/bbcode/hr.svg');
+}
+
+button[name="erase"] {
+   margin-left: auto !important;
 }
 
 button[name="erase"] span {
