@@ -1339,7 +1339,7 @@ h4.min_padding:after {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
-.torrent_description .head a, #userhistory .notify_artist span:nth-of-type(3) a, #userhistory .notify_torrents span:nth-of-type(3) a, #userhistory .notify_collages span:nth-of-type(3) a, #userhistory .notify_forums span:nth-of-type(3) a, .forum_post .colhead_dark div[id^="bar"] a, .go_to_top {
+.torrent_description .head a, #userhistory .notify_artist span:nth-of-type(3) a, #userhistory .notify_torrents span:nth-of-type(3) a, #userhistory .notify_collages span:nth-of-type(3) a, #userhistory .notify_forums span:nth-of-type(3) a, .forum_post .colhead_dark div[id^="bar"] a, .go_to_top, .go_to_bottom {
     display: inline-block;
     padding: 0.5rem;
     color: #b9bbbe;
