@@ -1123,6 +1123,8 @@ h4.min_padding:after {
     padding-top: 0.25rem;
 }
 
+
+.forum_list.border .colhead,
 #dnulist .colhead, .request_table .colhead_dark, #collage .colhead, #collage .colhead_dark, .staff .colhead, .message_table .colhead, .forum_index .colhead {
     color: #53575e;
     font-variant: small-caps;
@@ -1302,6 +1304,44 @@ h4.min_padding:after {
     font-size: 0;
     overflow: hidden;
 }
+
+/* Search results... */
+.forum_list.border tr:not(.colhead) {
+    border-left: 1px solid #202225;
+    border-right: 1px solid #202225;
+    background: #292b2f;
+}
+
+.forum_list.border .colhead + tr {
+    border-top: 1px solid #202225;
+}
+
+.forum_list.border .colhead + tr a, .forum_list.border tr.rowb + tr.rowa a, .forum_list tr.rowa + tr.rowb a {
+    color: #b0b2b6;
+    font-weight: 600;
+}
+
+.forum_list.border .colhead + tr a:hover, .forum_list.border tr.rowb + tr.rowa a:hover, .forum_list tr.rowa + tr.rowb a:hover {
+    color: #fff;
+}
+
+
+.forum_list.border tr.rowa + tr.rowa, .forum_list tr.rowb + tr.rowb {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #202225;
+    border-bottom: 1px solid #202225;
+    background: transparent;
+}
+
+.forum_list.border tr.rowa + tr.rowa td, .forum_list tr.rowb + tr.rowb td {
+    padding: 1.0rem 0.5rem 2.0rem;
+}
+
+.forum_list.border tr:last-of-type {
+    border-bottom: 0 !important;
+}
+
 
 #searchforum div, #searchthread div {
     padding: 0.5rem;
