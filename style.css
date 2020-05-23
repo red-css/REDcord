@@ -1370,7 +1370,17 @@ h4.min_padding:after {
 }
 
 .torrent_description .head a, .go_to_top {
-    background-image: url('img/uparrow.png');
+    background-image: url('img/uparrow.svg');
+   opacity: 0.6;
+}
+
+.go_to_bottom {
+    background-image: url('img/downarrow.svg');
+   opacity: 0.6;
+}
+
+.torrent_description:hover .head a:hover, .go_to_top:hover, .go_to_bottom:hover {
+   opacity: 1;
 }
 
 .colhead_dark a[href^="report"] {
