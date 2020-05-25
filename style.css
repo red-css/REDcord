@@ -1998,6 +1998,10 @@ div[id^="peers_"] h4,
     clear: none;
 }
 
+.album_votes span {
+    font-size: 0.85rem;
+}
+
 .vote_tag_up, .vote_tag_down, .remove_tag a, .vote_artist_up, .vote_artist_down, .remove_artist a {
     height: 0.75rem;
     width: 0.75rem;
