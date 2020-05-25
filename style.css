@@ -1834,6 +1834,12 @@ ul.poll li.graph {
     color: #e91e5c;
 }
 
+.tl_notice {
+    color: #e67e22;
+}
+
+
+div[id^="logs_"],
 div[id^="reported_"],
 div[id^="files_"],
 div[id^="peers_"] {
@@ -1842,6 +1848,26 @@ div[id^="peers_"] {
     border: 1px solid #202225;
     border-radius: 5px;
     margin-bottom: 2.0rem;
+}
+
+
+div[id^="logs_"] blockquote {
+    width: 100% !important;
+    background: transparent;
+    padding: 0 0 1.0rem;
+    border: 0;
+}
+
+
+div[id^="logs_"] blockquote pre {
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    border-left: 3px solid #666;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0;
+    background: rgba(255, 255, 255, .03);
 }
 
 .reportinfo_table tr, .reportinfo_table td, .reportinfo_table tbody {
@@ -1881,6 +1907,9 @@ div[id^="peers_"] h4 {
     text-align: right;
 }
 
+div[id^="logs_"] blockquote:nth-of-type(2) h3,
+div[id^="logs_"] blockquote:first-of-type span,
+div[id^="logs_"] blockquote:first-of-type strong,
 .filelist_title,
 div[id^="peers_"] h4,
 .reportinfo_table .colhead_dark td {
@@ -2298,11 +2327,11 @@ div[id^="peers_"] h4,
     line-height: 1.3rem;
 }
 
-span[style="color: red;"], .important_text, .warning {
+span[style="color: red;"], span[style="color: #FF0000"], .important_text, .warning {
     color: #ec5754 !important;
 }
 
-span[style="color: green;"] {
+span[style="color: green;"], span[style="color: #00FF00"] {
     color: #2eca6b !important;
 }
 
@@ -2870,8 +2899,8 @@ a[href="#requests"] {
 }
 
 .box_addtocollage .body #searchforcollagebutton {
-    flex: 0 0 25%;
-    width: 25%;
+    flex: 0 0 auto;
+    width: unset !important;
 }
 
 .box_addtocollage form, .add_torrent_container form {
@@ -2888,7 +2917,7 @@ a[href="#requests"] {
 }
 
 .box_addtocollage form input {
-    flex: 0 0 40%;
+    flex: 0 0 auto;
     margin-left: 0;
 }
 
