@@ -1129,6 +1129,7 @@ h4.min_padding:after {
 }
 
 
+#log_table strong,
 .forum_list.border .colhead,
 #dnulist .colhead, .request_table .colhead_dark, #collage .colhead, #collage .colhead_dark, .staff .colhead, .message_table .colhead, .forum_index .colhead {
     color: #53575e;
@@ -4003,6 +4004,103 @@ ul.collage_images li:hover span {
     background: rgba(255, 255, 255, .3);
     vertical-align: middle;
 }
+
+/************** Log / Logchecker *******************/
+
+#log_table {
+    margin-top: 1.0rem;
+}
+#log_table td {
+    padding: 0.5rem 0
+}
+
+#log #content .search_form .label {
+    display: none;
+}
+
+.log_deleted, .log_edited, .log_upload {
+    font-weight: 400!important
+}
+
+.log_upload a, span[style*="color: green;"] a {
+    color: #2eca6b
+}
+
+.log_edited a, span[style*="color: blue;"] a {
+    color: #7ea7d7
+}
+
+.log_deleted a, span[style*="color: red;"] a {
+    color: #e91e5c
+}
+
+.normal a {
+    color: #eee8eb;
+}
+
+#log_table .log_deleted, #log_table .log_edited, #log_table .log_upload, #log_table .normal {
+    color: unset!important;
+    display: block;
+    margin-left: 18px;
+    position: relative
+}
+
+#log_table .log_deleted:before, #log_table .log_edited:before, #log_table .log_upload:before, #log_table .normal:before {
+    border-radius: 50%;
+    bottom: 50%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin-left: -18px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    background: #ae3232
+}
+
+#log_table .log_upload:before {
+    background: #2eca6b
+}
+
+#log_table .log_edited:before {
+    background: #5a8cc5
+}
+
+#log_table .log_deleted:before {
+    background: #e91e5c
+}
+
+#log_table .normal:before {
+    background: #d9d2d5
+}
+
+#logchecker textarea {
+    display: block;
+    margin: 10px auto 20px
+}
+
+#logchecker .forum_post td {
+    padding: 10px 20px!important
+}
+
+#logchecker .thin div p {
+    text-align: left
+}
+
+#logchecker .thin {
+    margin: 0 auto;
+    width: 98%
+}
+
+#logchecker form div:last-of-type {
+    background: transparent!important;
+    border: 1px dashed #999!important;
+    border-radius: 0!important;
+    margin-top: -1em!important;
+    padding: 20px
+}
+
 
 /****************** Staff List *****************/
 
