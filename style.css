@@ -1129,10 +1129,13 @@ h4.min_padding:after {
 }
 
 
+.filelist_table .colhead_dark td,
+div[id^="peers_"] .colhead_dark td,
 #log_table strong,
 .forum_list.border .colhead,
 #dnulist .colhead, .request_table .colhead_dark, #collage .colhead, #collage .colhead_dark, .staff .colhead, .message_table .colhead, .forum_index .colhead {
     color: #53575e;
+    font-weight: 600;
     font-variant: small-caps;
 }
 
@@ -1825,6 +1828,79 @@ ul.poll li.graph {
 
 .snatched_group .group_info strong a, #bookmarks .snatched_group strong a {
     color: #e6722e !important;
+}
+
+.tl_reported {
+    color: #e91e5c;
+}
+
+div[id^="reported_"],
+div[id^="files_"],
+div[id^="peers_"] {
+    background: #292b2f;
+    padding: 0.5rem;
+    border: 1px solid #202225;
+    border-radius: 5px;
+    margin-bottom: 2.0rem;
+}
+
+.reportinfo_table tr, .reportinfo_table td, .reportinfo_table tbody {
+}
+
+.filelist_table .colhead_dark td {
+    font-size: 0.85rem;
+}
+
+.filelist_table tr:not(.colhead_dark) {
+    font-family: "Consolas", Monospace;
+}
+
+div[id^="peers_"] table td {
+    font-size: 0.85rem !important;
+}
+
+div[id^="peers_"] h4 {
+    padding: 0.15rem 0.4rem;
+}
+
+.filelist_title {
+    display: block;
+    float: none !important;
+    margin-bottom: 0.75rem;
+}
+
+.filelist_path {
+    display: block;
+    float: none!important;
+    padding: 0!important;
+    visibility: visible
+}
+
+.filelist_table td:nth-of-type(2) {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.filelist_title,
+div[id^="peers_"] h4,
+.reportinfo_table .colhead_dark td {
+    text-transform: uppercase;
+    font-size: 1.0rem !important;
+    color: #e5e5e5;
+    font-weight: 600;
+}
+
+
+.reportinfo_table blockquote {
+    border: 0;
+    padding: 0;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    border-left: 3px solid #e91e5c;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0;
+    background: rgba(255, 255, 255, .03);
 }
 
 .torrent_table td {
@@ -2601,14 +2677,24 @@ a[href="#requests"] {
     width: 100%;
 }
 
-#user .torrent_table tr, #userhistory .torrent_table tr, #artist .torrent_table tr, #torrents .torrent_table tr, #top10 .torrent_table tr {
+#user .torrent_table > tr,
+#userhistory .torrent_table > tr,
+#artist .torrent_table > tr,
+#torrents .torrent_table > tr,
+#top10 .torrent_table > tr,
+#user .torrent_table > tbody > tr,
+#userhistory .torrent_table > tbody > tr,
+#artist .torrent_table > tbody > tr,
+#torrents .torrent_table > tbody > tr,
+#top10 .torrent_table > tbody > tr {
     position: relative;
     padding-left: 11.5rem;
     width: 100%;
     display: table-row-group;
 }
 
-#user .torrent_table td:nth-of-type(1), #torrents .torrent_table:not(.details) .group_torrent td:nth-of-type(1), #userhistory .group_torrent td:nth-of-type(1) {
+#user .torrent_table td:nth-of-type(1),
+#torrents .torrent_table:not(.details) .group_torrent td:nth-of-type(1), #userhistory .group_torrent td:nth-of-type(1) {
     padding-left: 12.0rem;
 }
 
@@ -4114,7 +4200,10 @@ ul.collage_images li:hover span {
 
 /** Experimental! */
 
-#collage .colhead_dark td:not(:first-of-type), #bookmarks .colhead_dark, #torrents .colhead_dark td:not(:first-of-type), #SOME.colhead {
+#collage .colhead_dark td:not(:first-of-type),
+#bookmarks .colhead_dark,
+#torrents > .colhead_dark td:not(:first-of-type),
+#torrents > tbody > .colhead_dark td:not(:first-of-type) {
     font-size: 0;
     text-align: right;
 }
