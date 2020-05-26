@@ -1778,11 +1778,54 @@ ul.poll li.graph {
     border-radius: 4px;
 }
 
-/*
-#torrents .collage_table .colhead a {
+#torrent_details .no_overflow blockquote {
+    background: transparent;
+    border: 0;
+    
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    
+}
+
+#torrent_details .no_overflow blockquote:first-of-type {
+    margin: 0;
+}
+#torrent_details .no_overflow blockquote:nth-of-type(2) {
+    border-left: 3px solid #e67e22;
+    background: rgba(255, 255, 255, .025);
+    border-radius: 0 5px 5px 0;
+    padding: 0.35rem 0.5rem;
+}
+
+#torrent_details .no_overflow blockquote:nth-of-type(2) b {
+    text-transform: uppercase;
+    color: #707d82;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+#torrent_details .no_overflow blockquote:nth-of-type(2) b + br {
     display: none;
 }
-*/
+
+.torrentdetails > td {
+    padding: 0.5rem 0.75rem;
+}
+
+.torrentdetails .linkbox {
+    margin: 1.0rem;
+    text-align: right;
+}
+
+.torrentdetails .linkbox a {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    font-weight: 600;
+    color: #aaacaf !important;
+    background: rgba(255, 255, 255, .05);
+}
 
 #torrents .collage_table .colhead a:nth-of-type(1), #torrents .vote_matches_table .colhead a:nth-of-type(1) {
     height: 0.85rem;
@@ -1866,7 +1909,7 @@ div[id^="logs_"] blockquote pre {
     font-size: 0.8rem;
     border-left: 3px solid #666;
     padding: 0.35rem 0.5rem;
-    border-radius: 0;
+    border-radius: 0 5px 5px 0;
     background: rgba(255, 255, 255, .03);
 }
 
@@ -1875,6 +1918,10 @@ div[id^="logs_"] blockquote pre {
 
 .filelist_table .colhead_dark td {
     font-size: 0.85rem;
+}
+
+.filelist_table .number_column {
+    font-size: 0.75rem !important;
 }
 
 .filelist_table tr:not(.colhead_dark) {
