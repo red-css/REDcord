@@ -2119,6 +2119,13 @@ div[id^="peers_"] h4,
     z-index: 100;
 }
 
+.linkbox .add_bookmark { /* reset */
+    height: auto;
+    width: auto;
+    position: unset;
+    display: unset;
+}
+
 .show_torrents {
     height: 5.0rem;
 }
