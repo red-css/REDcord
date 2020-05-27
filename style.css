@@ -2924,7 +2924,7 @@ a[href="#requests"] {
     white-space: nowrap;
 }
 
-.box_artists .artists_label {
+.box_artists .artists_label, .box_artists strong {
     visibility: visible;
     display: block;
     padding-top: 0.25rem;
