@@ -3573,6 +3573,11 @@ a[href="#requests"] {
 }
 
 /****************** Requests *****************/
+.save_message {
+    margin-bottom: 1.0rem;
+    color: #f1bd1d;
+    font-weight: 600;
+}
 
 #requests .search_form {
     font-size: 0.75rem;
