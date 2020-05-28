@@ -4476,12 +4476,16 @@ textarea.wbbarea {
 
 div.wbbcode {
     width: 100% !important;
+    padding: 0;
 }
 
-.wbbbuttons {
+div.wbbbuttons {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 .wbbcode .wbbbuttons button.whutbbutton {
