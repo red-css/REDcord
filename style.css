@@ -2273,6 +2273,47 @@ div[id^="peers_"] h4,
     background: #2b2d32;
 }
 
+.torrent_action_buttons {
+    display: flex;  
+}
+
+.torrent_action_buttons a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    height: 1.0rem;
+    width: 1.0rem;
+    display: inline-block;
+    /* font-size: 0 !important; */
+    overflow: hidden;
+    opacity: 0.5;
+    margin: 0 0.25rem;
+}
+
+.torrent_action_buttons a:hover {
+    opacity: 1;
+}
+
+.button_pl {
+    background-image: url('img/icons/permalink.svg');
+}
+
+.button_rp {
+    background-image: url('img/icons/report.svg');
+}
+
+.button_ed {
+    background-image: url('img/icons/edit.svg');
+}
+
+.button_dl {
+    background-image: url('img/icons/download.svg');
+}
+
+.button_rm {
+    background-image: url('img/icons/delete.svg');
+}
+
 #bookmarks .group_torrent span, .torrent_action_buttons {
     padding-left: 0.75rem;
     float: right;
