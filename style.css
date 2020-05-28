@@ -2321,6 +2321,18 @@ div[id^="peers_"] h4,
     background-image: url('img/icons/delete.svg');
 }
 
+.button_rq {
+    background-image: url('img/icons/request.svg');
+}
+
+.button_fl {
+    background-image: url('img/icons/token.svg');
+}
+
+.button_va {
+    background-image: url('img/icons/varroa.svg');
+}
+
 #bookmarks .group_torrent span, .torrent_action_buttons {
     padding-left: 0.75rem;
     float: right;
