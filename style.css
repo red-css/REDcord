@@ -2277,21 +2277,29 @@ div[id^="peers_"] h4,
     display: flex;  
 }
 
+.torrent_action_buttons {
+    display: flex;  
+}
+
 .torrent_action_buttons a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;    
     height: 1.0rem;
     width: 1.0rem;
+    padding: 0.25rem;
     display: inline-block;
-    /* font-size: 0 !important; */
+    font-size: 0 !important;
     overflow: hidden;
-    opacity: 0.5;
-    margin: 0 0.25rem;
+    opacity: 0.6;
+    margin: 0.125rem 0.35rem;
+    background-size: 95% 95%;
+    background-image: url('img/icons/edit.svg'); /* delete someday, I'm looking for missed buttons! */
 }
 
 .torrent_action_buttons a:hover {
     opacity: 1;
+    background-size: 100% 100%;
 }
 
 .button_pl {
