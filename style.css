@@ -2294,7 +2294,6 @@ div[id^="peers_"] h4,
     opacity: 0.6;
     margin: 0.125rem 0.35rem;
     background-size: 95% 95%;
-    background-image: url('img/icons/edit.svg'); /* delete someday, I'm looking for missed buttons! */
 }
 
 .torrent_action_buttons a:hover {
