@@ -605,52 +605,52 @@ a[href*="musicbrainz.org"] {
 }
 
 a[href*="bandcamp.com"] {
-    background-image: url('img/bandcamp.png');
+    background-image: url('img/links/bandcamp.png');
     color: #1ca0c3;
 }
 
 a[href*="discogs.com"] {
-    background-image: url('img/discogs.png');
+    background-image: url('img/links/discogs.png');
     color: #dadac5;
 }
 
 a[href*="amazon.com"] {
-    background-image: url('img/amazon.png');
+    background-image: url('img/links/amazon.png');
     color: #febd69;
 }
 
 a[href*="deezer.com"] {
-    background-image: url('img/deezer.png');
+    background-image: url('img/links/deezer.png');
     color: #55e59a;
 }
 
 a[href*="tidal.com"] {
-    background-image: url('img/tidal.png');
+    background-image: url('img/links/tidal.png');
     color: #7fcaef;
 }
 
 a[href*="spotify.com"] {
-    background-image: url('img/spotify.png');
+    background-image: url('img/links/spotify.png');
     color: #1ed760;
 }
 
 a[href*="itunes.com"] {
-    background-image: url('img/itunes.png');
+    background-image: url('img/links/itunes.png');
     color: #ea80fb;
 }
 
 a[href*="youtube.com"] {
-    background-image: url('img/youtube.png');
+    background-image: url('img/links/youtube.png');
     color: #f56e6e;
 }
 
 a[href*="qobuz.com"] {
-    background-image: url('img/qobuz.png');
+    background-image: url('img/links/qobuz.png');
     color: #f3d2ae;
 }
 
 a[href*="beatport.com"] {
-    background-image: url('img/beatport.png');
+    background-image: url('img/links/beatport.png');
     color: #a8e00f;
 }
 
@@ -3711,16 +3711,17 @@ a[href="#requests"] {
 
 #collage .collage_table td:first-of-type a {
     display: block;
-    border-radius: 5px;
     height: 2.5rem;
     width: 2.5rem;
     overflow: hidden;
     font-size: 0;
-    margin: 0.25rem auto;
-    text-align: center;
     line-height: 2.5rem;
-    opacity: 0.1;
-    font-family: "Gloria Hallelujah";
+    opacity: 0.5;
+    margin: 0;
+}
+
+#collage .collage_table tr:hover td:first-of-type a {
+    opacity: 1;   
 }
 
 #collage .collage_table a[href*="collages.php?action=search&cats[0]=1"]:before {
@@ -3747,10 +3748,8 @@ a[href="#requests"] {
     display: block;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[4]=1"]:before {
-    content: 'L';
-    font-size: 2.0rem;
-    display: block;
+#collage .collage_table a[href*="collages.php?action=search&cats[4]=1"] {
+    background: url('img/collages/collage_record_label.svg') no-repeat center center;
 }
 
 #collage .collage_table a[href*="collages.php?action=search&cats[5]=1"]:before {
