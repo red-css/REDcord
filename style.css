@@ -3724,36 +3724,36 @@ a[href="#requests"] {
     opacity: 1;   
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[0]=1"]:before {
-    background: url('img/collages/collage_record_personal.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[0]=1"] {
+    background: url('img/collages/collage_personal.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[1]=1"]:before {
-    background: url('img/collages/collage_record_theme.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[1]=1"] {
+    background: url('img/collages/collage_theme.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[2]=1"]:before {
-    background: url('img/collages/collage_record_genre.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[2]=1"] {
+    background: url('img/collages/collage_genre.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[3]=1"]:before {
-    background: url('img/collages/collage_record_discog.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[3]=1"] {
+    background: url('img/collages/collage_discog.svg') no-repeat center center;
 }
 
 #collage .collage_table a[href*="collages.php?action=search&cats[4]=1"] {
     background: url('img/collages/collage_record_label.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[5]=1"]:before {
-    background: url('img/collages/collage_record_staff.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[5]=1"] {
+    background: url('img/collages/collage_staff.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[6]=1"]:before {
-    background: url('img/collages/collage_record_charts.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[6]=1"] {
+    background: url('img/collages/collage_charts.svg') no-repeat center center;
 }
 
-#collage .collage_table a[href*="collages.php?action=search&cats[7]=1"]:before {
-    background: url('img/collages/collage_record_artist.svg') no-repeat center center;
+#collage .collage_table a[href*="collages.php?action=search&cats[7]=1"] {
+    background: url('img/collages/collage_artist.svg') no-repeat center center;
 }
 
 ul.collage_images {
