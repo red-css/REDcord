@@ -1880,8 +1880,8 @@ ul.poll li.graph {
 }
 
 .tl_snatched {
-    color: #e6722e;
-    font-weight: 400;
+    color: #2eca6b;
+    font-weight: 600;
 }
 
 .snatched_group .group_info strong a, #bookmarks .snatched_group strong a {
@@ -1890,10 +1890,12 @@ ul.poll li.graph {
 
 .tl_reported {
     color: #e91e5c;
+    font-weight: 600;
 }
 
 .tl_notice {
     color: #e67e22;
+    font-weight: 600;
 }
 
 
