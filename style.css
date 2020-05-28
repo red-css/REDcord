@@ -14,12 +14,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
-
+/*
 :target::before {
   content: "";
   display: block;
   height: 4.0rem; /* fixed header height*/
-}
+}*/
 
 body {
     background: #2f3136;
