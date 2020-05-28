@@ -705,8 +705,8 @@ a[href*="bandcamp.com"]:hover, a[href*="discogs.com"]:hover, a[href*="musicbrain
 
 input[type="submit"], input[type="button"], button {
     -webkit-appearance: button;
-    background: #36393f;
-    color: #43b581;
+    background: #6688ba;
+    color: #fdfdfe;
     font-weight: 600;
     margin: 0.25rem;
     border: 1px solid transparent;
@@ -722,8 +722,6 @@ input[type="submit"], input[type="button"], button {
 }
 
 input[type="submit"], input[type="button"], button {
-    background: #6688ba;
-    color: #fdfdfe;
 }
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
@@ -739,14 +737,13 @@ input[value="Remove"]:hover, input[value="Delete"]:hover, input[value="Delete me
     background: #ac3535;
 }
 
-/* Stolen from PTP Blue Night -- get in touch later */
-
+/* Jelly stolen from PTP Blue Night -- get in touch later */
 input[type="submit"]:hover, input[type="button"]:hover, button:hover {
     /* box-shadow: 0 0 3px 2px rgba(0, 0, 0, .4);
    background: #3d4046;
     color: #72e1ae; */
     cursor: pointer;
-    animation: jelly-effect .4s
+    /* animation: jelly-effect .4s */
 }
 
 @keyframes jelly-effect {
@@ -766,9 +763,37 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover {
 
 input[type="submit"]:focus, input[type="button"]:focus, button:focus {
     color: #fafcfc;
-    border-color: #5f7196;
     border: 1px solid #eaeaea;
+    border-color: rgba(255, 255, 255, .3);
 }
+
+/***** FAKE BUTTONS! ******/
+.torrentdetails .linkbox a {
+    background: transparent;
+    box-shadow: none;
+    font-weight: 500;
+    -webkit-appearance: button;
+    background: #6688ba;
+    color: #fdfdfe !important;
+    font-weight: 600;
+    margin: 0.25rem 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.3rem 0.35rem;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .15);
+}
+
+
+.torrentdetails .linkbox a:hover {
+   background: #5778ab;
+}
+
+
+.torrentdetails .linkbox a:focus {
+    border-color: rgba(255, 255, 255, .3);
+}
+
+
 
 textarea {
     display: block;
@@ -1815,16 +1840,6 @@ ul.poll li.graph {
 
 .torrentdetails .linkbox {
     margin: 1.0rem;
-    text-align: right;
-}
-
-.torrentdetails .linkbox a {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    font-weight: 600;
-    color: #aaacaf !important;
-    background: rgba(255, 255, 255, .05);
 }
 
 #torrents .collage_table .colhead a:nth-of-type(1), #torrents .vote_matches_table .colhead a:nth-of-type(1) {
