@@ -1766,7 +1766,9 @@ ul.poll li.graph {
 }
 
 #reply_box {
-    padding: 0.5rem 0;
+   padding: 0.5rem 0;
+   clear: both;
+   margin-top: 1.0rem;
 }
 
 #reply_box h3 {
