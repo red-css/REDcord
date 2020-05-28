@@ -606,7 +606,7 @@ a[href*="musicbrainz.org"], a[href*="bandcamp.com"], a[href*="discogs.com"], a[h
 }
 
 a[href*="musicbrainz.org"] {
-    background-image: url('img/musicbrainz.png');
+    background-image: url('img/links/musicbrainz.png');
     color: #ba67af;
 }
 
