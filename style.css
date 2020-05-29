@@ -5720,8 +5720,19 @@ button[name="shortcut"] span {
     float: left;
 }
 
-.itunes_iframe, .bandcamp_iframe {
-    width: 42.5%;
+.itunes_iframe, .bandcamp_iframe, .soundcloud_iframe {
+    min-width: 42.5%;
+    max-width: 49%;
+    width: auto;
     float: left;
     margin: 1.0rem 0.5%;
+    height: 300px;
+}
+
+.itunes_iframe iframe, .bandcamp_iframe iframe, .soundcloud_iframe iframe {
+    height: 300px !important;
+}
+
+#torrents .linkbox {
+    clear: both;
 }
