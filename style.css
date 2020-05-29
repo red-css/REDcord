@@ -2337,10 +2337,10 @@ div[id^="peers_"] h4,
     background-image: url('img/icons/token.svg');
 }
 
-.varroa_dl {
+.varroa_dl a {
     background-image: url('img/icons/varroa.svg');
 }
-.varroa_fl {
+.varroa_fl a {
     background-image: url('img/icons/varroa_fl.svg');
 }
 
