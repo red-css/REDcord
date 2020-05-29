@@ -2337,8 +2337,11 @@ div[id^="peers_"] h4,
     background-image: url('img/icons/token.svg');
 }
 
-.button_va {
+.varroa_dl {
     background-image: url('img/icons/varroa.svg');
+}
+.varroa_fl {
+    background-image: url('img/icons/varroa_fl.svg');
 }
 
 #bookmarks .group_torrent span, .torrent_action_buttons {
