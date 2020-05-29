@@ -1159,7 +1159,7 @@ h4.min_padding:after {
     padding-top: 0.25rem;
 }
 
-
+#userhistory .merit_token_history .colhead td,
 .filelist_table .colhead_dark td,
 div[id^="peers_"] .colhead_dark td,
 #log_table strong,
@@ -4174,6 +4174,23 @@ ul.collage_images li:hover span {
     padding: 0.35rem 0.5rem;
     display: inline-block;
     font-size: 1.0rem;
+}
+
+#userhistory .merit_token_history {
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+#userhistory .merit_token_history tr:not(.colhead) {
+    border-top: 1px solid #3f4145;
+}
+
+#userhistory .merit_token_history tr:not(.colhead):hover {
+    background: #2b2d32;
+}
+
+#userhistory .merit_token_history .time {
+    font-size: 0.75rem;
 }
 
 #userhistory .forum_post {
