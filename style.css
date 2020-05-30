@@ -2011,7 +2011,7 @@ div[id^="peers_"] h4,
 
 .torrent_table td {
     vertical-align: top;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .colhead td {
@@ -2047,13 +2047,13 @@ div[id^="peers_"] h4,
 }
 
 .group td, .torrent td {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 #bookmarks .group strong, .group_info {
     font-size: 1.0rem;
     font-weight: 400;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 
 #user .big_info, #user .group_info {
@@ -2273,13 +2273,21 @@ div[id^="peers_"] h4,
     font-size: 0;
 }
 
+#torrents .group td:nth-of-type(4),
+#torrents .group td:nth-of-type(5),
+#torrents .group td:nth-of-type(6),
+#torrents .group td:nth-of-type(7),
+#torrents .group td:nth-of-type(8){
+    display: none;
+}
+
 .group_torrent td:first-of-type:not(.edition_info) {
     font-size: 0;
     transition: .1s linear background-color;
 }
 
 .group_torrent td:not(.edition_info) a, .torrent .torrent_action_buttons a {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .details .group_torrent td:not(.edition_info) a, .details .torrent_action_buttons a {
@@ -2367,34 +2375,6 @@ div[id^="peers_"] h4,
 
 #bookmarks .group_torrent span a, .torrent_action_buttons a {
     padding: 0 0.25rem;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(1), .torrent_action_buttons a:nth-of-type(1) {
-    color: #0dace8;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(2), .torrent_action_buttons a:nth-of-type(2) {
-    color: #0babdb;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(3), .torrent_action_buttons a:nth-of-type(3) {
-    color: #0bb5db;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(4), .torrent_action_buttons a:nth-of-type(4) {
-    color: #0bc0db;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(5), .torrent_action_buttons a:nth-of-type(5) {
-    color: #0bcadb;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(6), .torrent_action_buttons a:nth-of-type(6) {
-    color: #0bd4db;
-}
-
-#bookmarks .group_torrent span a:nth-of-type(7), .torrent_action_buttons a:nth-of-type(7) {
-    color: #0bdbd8;
 }
 
 .tags {
@@ -2634,11 +2614,8 @@ a[href="#torrents_album"] {
 }
 
 .group_torrent a, #torrents_album .group_torrent a {
-    color: #5b899b;
-}
-
-.snatched_group.group_torrent a {
-    color: #8d7861;
+    color: #cecece;
+    font-weight: 600;
 }
 
 #torrent_details a {
@@ -2855,6 +2832,18 @@ a[href="#requests"] {
 
 .big_info strong {
     font-weight: 400;
+}
+
+
+.edition td {
+    padding-top: 0.5rem;
+    font-variant: small-caps;
+    color: #7a7c7f !important;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+
+.group_torrent {
+    line-height: 1.0rem;    
 }
 
 .torrent_table .group_torrent td:nth-of-type(1), .release_table tr td:nth-of-type(1) {
