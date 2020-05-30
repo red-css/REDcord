@@ -1892,6 +1892,11 @@ ul.poll li.graph {
     font-weight: 600;
 }
 
+.tl_free {
+    color: #23af96;
+    font-weight: 600;
+}
+
 .snatched_group .group_info strong a, #bookmarks .snatched_group strong a {
     color: #2eca6b !important;
 }
