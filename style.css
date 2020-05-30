@@ -2077,6 +2077,10 @@ div[id^="peers_"] h4,
     transition: .1s ease-in-out padding;
 }
 
+.box_image img {
+    width: auto !important;
+}
+
 .group_image img, .box_image img {
     border-radius: 5px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, .15);
