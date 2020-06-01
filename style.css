@@ -3649,7 +3649,7 @@ a[href="#requests"] {
     font-weight: 600;
 }
 
-#requests .search_form {
+#requests #ttt .search_form {
     font-size: 0.75rem;
 }
 
