@@ -579,7 +579,10 @@ a[href^="user"] {
     color: #e6722e;
 }
 
-td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
+img[alt^="EMIYA"],
+img[alt^="Jacon"],
+img[alt^="InCom"],
+img[alt^="whatseedy"] {
     background: url('img/low_quality_poster.png') no-repeat center center;
     display: inline-block;
     box-sizing: border-box;
@@ -588,8 +591,6 @@ td.avatar a[href$="=5133"] img, td.avatar a[href$="=7295"] img {
     width: 150px !important;
     background-size: cover;
 }
-
-.bad_user {}
 
 .starlord {
     padding-left: 1.05rem;
