@@ -1357,7 +1357,7 @@ div[id^="peers_"] .colhead_dark td,
     border-top: 1px solid #202225;
 }
 
-.forum_list.border .colhead + tr a, .forum_list.border tr.rowb + tr.rowa a, .forum_list tr.rowa + tr.rowb a {
+.forum_list.border .colhead + tr a, .forum_list.border tr.rowb + tr.rowa a, .forum_list.border tr.rowa + tr.rowb a {
     color: #b0b2b6;
     font-weight: 600;
 }
