@@ -1558,7 +1558,7 @@ blockquote {
     border-radius: 3px;
 }
 
-blockquote+br {
+blockquote+br+br {
     display: none;
 }
 
